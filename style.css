@@ -1,3 +1,10 @@
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+
 @charset "UTF-8";
 
 
@@ -61,12 +68,13 @@ hr {
 #the_best_movies{
 	border: 1px solid gray;
 
+
 body{
 	margin: 0 auto;
 	padding: 0;
 	height: auto;
 	width: 100%;
-	/*background-color: #fdb830;*/
+	background-color: #fdb830;
 }
 
 /*Header*/
@@ -76,14 +84,20 @@ body{
 	margin: 0 auto;
 	padding: 0;
 	height: 80px;
-	padding: 20px 20px;
+	padding: 40px 20px;
 	text-align: center;
+}
+
+.logo{
+	width: 250px;
+	height: auto;
 }
 
 #header{
 
 	background-color: white;
 	margin-top: 5px;
+	width: 100%;
 }
 
 .recherche{
@@ -94,13 +108,33 @@ body{
 	background-color: black;
 	color: white;
 	border-radius: 15px 15px 15px 15px;
+	width: 150px;
 }
 
 .go:hover{
-	background-color: white;
+	background-color: #fdb830;
 	color: black;
-	border: 1px black solid;
+	border: 1px #fdb830 solid;
 	border-radius: 15px 15px 15px 15px;
+	width: 150px;
+}
+
+.HeaderRight{
+	text-align: right;
+	padding-top: 5px;
+}
+
+.login{
+	background-color: #fdb830;
+	color: white;
+	border-radius: 0;
+	width: 100px;
+}
+
+.login:hover{
+	background-color: black;
+	color: white;
+	border-radius: 0;
 }
 
 .navbar{
@@ -108,12 +142,89 @@ body{
 	color: black;
 	border: 2px #fdb830 solid;
 	margin: 0;
+	height: 40px;
+
 }
 
 .navbar-inverse 
 .navbar-nav>li>a {
-    color: black;
+    color: white;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    border-right: 1px white solid;
 }
+
+.navbar-inverse 
+.navbar-nav>li {
+    color: white;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    border-right: 1px white solid;
+}
+
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+    color: white;
+    background-color: black;
+    border:1px black solid;
+}
+
+.navbar-nav>li>.dropdown-menu {
+    margin-top: 1px;
+    padding: 0;
+    border: 0;
+    color: white;
+    background-color: rgba(255, 0, 0, 0);
+    box-shadow: 0 0 0 0;
+}
+
+.dropdown-menu>li>a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: white;
+    white-space: nowrap;
+    margin-top: 5px;
+	margin-left: 20px;
+	height: 40px;
+	width: 140px;
+	padding: 5px;
+	text-align: center;
+	background-color: #fdb830;
+	height: 30px;
+}
+
+.dropdown-menu>li>a:hover {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: white;
+    white-space: nowrap;
+    margin-top: 5px;
+	margin-left: 20px;
+	height: 40px;
+	width: 140px;
+	padding: 10px;
+	text-align: center;
+	background-color: black;
+}
+
+.affix {
+    top: 0;
+    width: 100%;
+	border-radius: 0 0 0;
+
+  }
+
+.affix + .container-fluid {
+      padding-top: 70px;
+      width: 100%;
+  }
 
 /*Jumbotron*/
 
