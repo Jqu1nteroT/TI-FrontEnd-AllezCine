@@ -56,8 +56,33 @@ hr {
 	height:1px;
 	width: 1500px;
 	border:0;
+	
 }
 
 #the_best_movies{
 	border: 1px solid gray;
+}
+.modal-title{
+	color:red;
+	font-weight: bold;
+}
+
+#button_validate{
+	border-radius: 0;
+}
+
+.container_modal {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0px;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity: 0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
 }
