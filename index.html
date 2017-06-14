@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Allez Ciné</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" media="screen" href="css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="style.css">
@@ -30,7 +31,6 @@
 						<div class="col-xs-12 col-md-6">
 							<button type="button" class="btn btn-secondary">Secondary</button>
 						</div>
-						
 					</div>
 				</div>
 			</div>
@@ -69,6 +69,7 @@
 		</nav>
 	</div>
 	<!-- Deuxième DIV -->
+	<!-- Deuxième DIV -->
 	<section id="accueil">
 		<div class="jumbotron container-fluid">
 			<div class="span12">
@@ -89,29 +90,65 @@
 			</div>
 		</section>
 		<!-- Troisiéme DIV -->
-		<div>
-			<nav>
-				navigation
-			</nav>
-			
-			<section id="featured_movies">
-				featured_movies
-			</section>
-			
-			<section id="featured_series">
-				featured_series
-			</section>
-			<section id="shop_movies">
-				shop_movies
-			</section>
-			<section id="contact_us">
-				contact_us
-			</section>
-			<footer>
-				footer avec newletter
-			</footer>
+		<div style="border:1px solid yellow; padding-top:20px; padding-bottom:20px">
+			<div id="the_best_movies">
+				<div class="container" style="padding-top:20px; padding-bottom:20px">
+					<div class="row">
+						<div class="col-md-offset-1 col-md-2">
+							<img src="http://www.konbini.com/fr/files/2013/11/saw-2004-22-g.jpg" alt="Saw Movies" height="130" width="100">
+						</div>
+						<div class="col-md-2">
+							<img src="http://www.konbini.com/fr/files/2013/11/saw-2004-22-g.jpg" alt="Saw Movies" height="130" width="100">
+						</div>
+						<div class="col-md-2">
+							<img src="http://www.konbini.com/fr/files/2013/11/saw-2004-22-g.jpg" alt="Saw Movies" height="130" width="100">
+						</div>
+						<div class="col-md-2">
+							<img src="http://www.konbini.com/fr/files/2013/11/saw-2004-22-g.jpg" alt="Saw Movies" height="130" width="100">
+						</div>
+						<div class="col-md-2 col-md-offset-1">
+							<img src="http://www.konbini.com/fr/files/2013/11/saw-2004-22-g.jpg" alt="Saw Movies" height="130" width="100">
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-	</body>
+		<section id="featured_movies">
+			featured_movies
+			Jumbotron
+		</section>
+		
+		<section id="featured_series">
+			featured_series
+		</section>
+		<section id="shop_movies">
+			shop_movies
+		</section>
+		<section id="contact_us">
+			contact_us
+		</section>
+		<footer id="my_footer">
+			<form class="form-inline">
+				<div class="form-group">
+					<input style="border-radius:0;" type="email" class="form-control" id="exampleInputEmail2" placeholder="Your email..">
+				</div>
+				<button id="bouton_send" style="border-radius:0;" type="submit" class="btn .btn-warning">Send</button>
+			</form>
+			<br/>
+			<hr/>
+			<label id="copyright"> &copy; 2017 One Movies. All rights reserved | Design by BeCode</label>
+			<ul id="ul_footer">
+				<li><a href=""> <strong>MOVIES</strong> </a></li>
+				<li><a href=""> <strong>FAQ</strong> </a></li>
+				<li><a href=""> <strong>ACTION</strong> </a></li>
+				<li><a href=""> <strong>ADVENTURE</strong> </a></li>
+				<li><a href=""> <strong>COMEDY</strong> </a></li>
+				<li><a href=""> <strong>ICONS</strong> </a></li>
+				<li><a href=""> <strong>CONTACT US</strong> </a></li>
+			</ul>
+		</footer>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
 </html>
