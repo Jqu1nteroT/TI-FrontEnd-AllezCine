@@ -3,47 +3,94 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Allez Ciné</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="bootstrap1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="bootstrapmysite.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<script src="jquery-2.2.4.js"></script>
-
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link href="pgwslider.css" rel="stylesheet" type="text/css">
-
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" media="screen" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<!--<link rel="shortcut icon" type="image/png" href="img/hipsterlogogenerator_1495106664518.png">-->
 	</head>
-	<body>
+	<body data-spy="scroll" data-target=".navbar" data-offset="50">
 		<!-- Première DIV -->
-		<div style="border:1px solid red">
-			ici Logo
+		<div id="header">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-12 col-md-4 header"> <h2>Bonito Logo</h2> </div>
+					<div class="col-xs-12 col-md-4 header">
+						<div class="input-group col-xs-8" >
+							<input type="text" class="form-control recherche"  placeholder="Recherche" aria-describedby="basic-addon2">
+							<span class="input-group-btn">
+								<button class="btn btn-secondary  go" type="button">Go</button>
+							</span>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-4 header">
+						
+						<div class="col-xs-12 col-md-6">
+							<span class="glyphicon glyphicon-earphone"></span><p>(+000) 123 345 653</p>
+						</div>
+						<div class="col-xs-12 col-md-6">
+							<button type="button" class="btn btn-secondary">Secondary</button>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-		
-		<!-- Deuxième DIV -->
-		<div style="border:1px solid red">
-			ici le Jumbotron
-
-
-			<ul class="pgwSlider">
-			    <li><img src="paris.jpg" alt="Paris, France" data-description="Eiffel Tower and Champ de Mars"></li>
-			    <li><img src="montreal_mini.jpg" alt="Montréal, QC, Canada" data-large-src="montreal.jpg"></li>
-			    <li>
-			        <img src="shanghai.jpg">
-			        <span>Shanghai, China</span>
-			    </li>
-			    <li>
-			        <a href="http://www.nyc.gov" target="_blank">
-			            <img src="new-york.jpg">
-				    <span>New York, NY, USA</span>
-			        </a>
-			    </li>
-			</ul>
-
-
-
-		</div>
-		<nav>
-			navigation
+		<div class="row">
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						</button>
+					</div>
+					<div>
+						<div class="collapse navbar-collapse" id="myNavbar">
+							<ul class="nav navbar-nav">
+								<li><a href="#">Home</a></li>
+								<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Films <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Actions</a></li>
+									<li><a href="#">Aventures</a></li>
+									<li><a href="#">Policiers</a></li>
+								</ul>
+								<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Series <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Actions</a></li>
+									<li><a href="#">Aventures</a></li>
+									<li><a href="#">Policiers</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
 		</nav>
-		ici les col row etc
+	</div>
+	<!-- Deuxième DIV -->
+	<section id="accueil">
+		<div class="jumbotron container-fluid">
+			<ul class="pgwSlider">
+				<li><img src="paris.jpg" alt="Paris, France" data-description="Eiffel Tower and Champ de Mars"></li>
+				<li><img src="montreal_mini.jpg" alt="Montréal, QC, Canada" data-large-src="montreal.jpg"></li>
+				<li>
+					<img src="shanghai.jpg">
+					<span>Shanghai, China</span>
+				</li>
+				<li>
+					<a href="http://www.nyc.gov" target="_blank">
+						<img src="new-york.jpg">
+						<span>New York, NY, USA</span>
+					</a>
+				</li>
+			</ul>
+		</section>
 		<!-- Troisiéme DIV -->
 		<div style="border:1px solid yellow; padding-top:20px; padding-bottom:20px; width:1000px;">
 			<div id="the_best_movies">
@@ -52,7 +99,6 @@
 						<div class="col-md-2" style="padding:0px">
 							<img src="http://www.konbini.com/fr/files/2013/11/saw-2004-22-g.jpg" alt="Saw Movies" height="130" width="100">
 							<p>2016</p>
-
 						</div>
 						<div class="col-md-2" style="padding:0px">
 							<img src="http://www.konbini.com/fr/files/2013/11/saw-2004-22-g.jpg" alt="Saw Movies" height="130" width="100">
@@ -74,55 +120,173 @@
 				</div>
 			</div>
 		</div>
-
-
 		<section id="featured_movies">
-			featured_movies
-			Jumbotron
+			<div class="row">
+				
+				<h5>FEATURED MOVIES</h5>
+				
+				<div class="container">
+					<div class="col-md-2">
+						<img src="images.jpeg" class="img-responsive">
+					</div>
+					<div class="col-md-2">
+						<img src="images.jpeg" class="img-responsive">
+					</div>
+					<div class="col-md-2"><img src="images.jpeg" class="img-responsive"></div>
+					
+					<div class="col-md-2">
+						<img src="images.jpeg" class="img-responsive">
+					</div>
+					<div class="col-md-2">
+						<img src="images.jpeg" class="img-responsive">
+					</div>
+					
+					<div class="col-md-2"><img src="images.jpeg" class="img-responsive"></div>
+					
+					
+					
+					<div class="col-md-2">
+						<img src="images.jpeg" class="img-responsive">
+					</div>
+					<div class="col-md-2">
+						<img src="images.jpeg" class="img-responsive">
+					</div>
+					<div class="col-md-2"><img src="images.jpeg" class="img-responsive"></div>
+					
+					<div class="col-md-2">
+						<img src="images.jpeg" class="img-responsive">
+					</div>
+					<div class="col-md-2">
+						<img src="images.jpeg" class="img-responsive">
+					</div>
+					
+					<div class="col-md-2"><img src="images.jpeg" class="img-responsive"></div>
+					
+				</div>
+			</div>
 		</section>
 		
 		<section id="featured_series">
-			featured_series
+			<div class="row">
+				<h5>FEATURED SERIES TV</h5>
+				<div class="container">
+					
+					<div class="col-md-2">
+						<img src="images.jpeg" class="img-responsive">
+					</div>
+					<div class="col-md-2">
+						<img src="images.jpeg" class="img-responsive">
+					</div>
+					<div class="col-md-2"><img src="images.jpeg" class="img-responsive"></div>
+					
+					<div class="col-md-2">
+						<img src="images.jpeg" class="img-responsive">
+					</div>
+					<div class="col-md-2">
+						<img src="images.jpeg" class="img-responsive">
+					</div>
+					
+					<div class="col-md-2"><img src="images.jpeg" class="img-responsive"></div>
+					
+					<div class="col-md-2">
+						<img src="images.jpeg" class="img-responsive">
+					</div>
+					<div class="col-md-2">
+						<img src="images.jpeg" class="img-responsive">
+					</div>
+					<div class="col-md-2"><img src="images.jpeg" class="img-responsive"></div>
+					
+					<div class="col-md-2">
+						<img src="images.jpeg" class="img-responsive">
+					</div>
+					<div class="col-md-2">
+						<img src="images.jpeg" class="img-responsive">
+					</div>
+					
+					<div class="col-md-2"><img src="images.jpeg" class="img-responsive"></div>
+					
+				</div>
+				
+			</div>
+			
+			
+			
 		</section>
 		<section id="shop_movies">
-			shop_movies
-		</section>
-		<section id="contact_us">
-			contact_us
-		</section>
-
-		<footer id="my_footer" style="padding-top:30px; position: absolute; bottom: 0">
-			<label style="color:orange">SUBSCRIBE TO US</label>
-			<form class="form-inline">
-				<div class="form-group" style="border:1px solid white; padding:5px">
-					<input style="border-radius:0;" type="email" class="form-control" id="exampleInputEmail2" placeholder="Your email..">
-					<button id="bouton_send" style="border-radius:0;" type="submit" class="btn .btn-warning">Send</button>
+			<div class="row">
+				<h5>SHOP MOVIES</h5>
+				
+				<div class="container">
+					
+					<div class="col-md-6" style="background-color:blue">
+					</div>
+					<div class="col-md-6" style="background-color:yellow">
+					</div>
+					
+					
 				</div>
-			</form>
-			<hr/>
-			<label id="copyright"> &copy; 2017 One Movies. All rights reserved | Design by BeCode</label>
-
-			<ul id="ul_footer">
-				<li><a href=""> <strong>MOVIES</strong> </a></li>
-				<li><a href=""> <strong>FAQ</strong> </a></li>
-				<li><a href=""> <strong>ACTION</strong> </a></li>
-				<li><a href=""> <strong>ADVENTURE</strong> </a></li>
-				<li><a href=""> <strong>COMEDY</strong> </a></li>
-				<li><a href=""> <strong>ICONS</strong> </a></li>
-				<li><a href=""> <strong>CONTACT US</strong> </a></li>
-			</ul>
-
-
-		</footer>
-
-	<script src="script.js">
-		$(document).ready(function() {
-    		$('.pgwSlider').pgwSlider();
-		});
-	</script>
-
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script src="pgwslider.js"></script>
-
-</body>
+				
+				<div class="row">
+					
+					<div class="col-md-2">
+						<img src="images.jpeg" class="img-responsive">
+					</div>
+					<div class="col-md-2">
+						<img src="images.jpeg" class="img-responsive">
+					</div>
+					<div class="col-md-2"><img src="images.jpeg" class="img-responsive"></div>
+					
+					<div class="col-md-2">
+						<img src="images.jpeg" class="img-responsive">
+					</div>
+					<div class="col-md-2">
+						<img src="images.jpeg" class="img-responsive">
+					</div>
+					
+					<div class="col-md-2"><img src="images.jpeg" class="img-responsive"></div>
+					
+					
+					
+				</div>
+				
+			</section>
+			<section id="contact_us">
+				contact_us
+			</section>
+			<footer id="my_footer" style="padding-top:30px; position: absolute; bottom: 0">
+				<label style="color:orange">SUBSCRIBE TO US</label>
+				<footer id="my_footer">
+					<form class="form-inline">
+						<div class="form-group" style="border:1px solid white; padding:5px">
+							<input style="border-radius:0;" type="email" class="form-control" id="exampleInputEmail2" placeholder="Your email..">
+							<button id="bouton_send" style="border-radius:0;" type="submit" class="btn .btn-warning">Send</button>
+						</div>
+					</form>
+					<hr/>
+					<label id="copyright"> &copy; 2017 One Movies. All rights reserved | Design by BeCode</label>
+					<ul id="ul_footer">
+						<li><a href=""> <strong>MOVIES</strong> </a></li>
+						<li><a href=""> <strong>FAQ</strong> </a></li>
+						<li><a href=""> <strong>ACTION</strong> </a></li>
+						<li><a href=""> <strong>ADVENTURE</strong> </a></li>
+						<li><a href=""> <strong>COMEDY</strong> </a></li>
+						<li><a href=""> <strong>ICONS</strong> </a></li>
+						<li><a href=""> <strong>CONTACT US</strong> </a></li>
+					</ul>
+				</footer>
+				
+				<script src="jquery-2.2.4.js"></script>
+				<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+				<script src="pgwslider.js"></script>
+				<script src="script.js">
+						$(document).ready(function() {
+						$('.pgwSlider').pgwSlider();
+						});
+				</script>
+			</footer>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		>>>>>>> master
+	</body>
 </html>
