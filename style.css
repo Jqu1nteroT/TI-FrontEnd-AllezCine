@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+
+#my_footer{
+	background-color: #130E0A;
+}
+
+#subscribe{
+	color: orange;
+}
+
+#ul_footer{
+	display: inline;
+}
+
+li{
+	display: inline;
+}
+
+form{
+	padding-top: 10px;
+	padding-bottom: 50px;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+#email_footer{
+	color: gray;
+}
+
+#bouton_send{
+	color:white;
+	background-color: orange;
+}
+
+#div_blanche{
+	width: 250px;
+	padding: 10px;
+	height:20px;
+	border: 1px solid white;
+}
+
+#copyright{
+	color:gray;
+}
+
+ul{
+	float: right;
+}
+
+hr {
+	background-color: gray;
+	height:1px;
+	width: 1500px;
+	border:0;
+}
+
+#the_best_movies{
+	border: 1px solid gray;
+}
