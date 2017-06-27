@@ -1,0 +1,535 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Allez Ciné Kids</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <META http-equiv="Content-Language" content="fr">
+        <link rel="stylesheet" media="screen" href="css/bootstrap.min.css">
+        <!-- <link rel="stylesheet" href="style.css"> -->
+        <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+        <!--<link rel="shortcut icon" type="image/png" href="Logomakr_6RmYdT.png"> -->
+        
+        <script>
+        /* $( function() {
+        $( "#tab" ).tabs();
+        } ); */
+        </script>
+    </head>
+    <body data-spy="scroll" data-target=".navbar" data-offset="50" id="page-top">
+        <!--COOKIES-->
+        <div id="barraaceptacion" style="display: block;">
+            <div class="inner">
+                <p>Nous vous demandons l'autorisation d'obtenir les données statistiques sur cette navigation sur le Web, en vertu réel du décret de la loi du 13/2012. Si vous continuez à parcourir, nous considérons l'acceptation de l'utilisation de cookies.</p>
+                <a href="javascript:void(0);" class="ok" onclick="PonerCookie();"><b>OK</b></a> |
+                <a href="http://politicadecookies.com" target="_blank" class="info">Plus information</a>
+            </div>
+        </div>
+        <!--le bouton flêche-->
+        <a class="page-scroll" href="#header">
+            <div class="divFleche" id="buton"></div></a>
+            <!-- Section Header-->
+            <!-- Modal content login-->
+            <div class="modal fade" id="login" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content" >
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h1 class="modal-title">Login:</h1>
+                        </div>
+                        <div class="modal-body">
+                            <form class="form">
+                                <label for="usr">Identifiant:</label>
+                                <div class="input-group">
+                                    <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-user"></span></span>
+                                    <input type="text" class="form-control" id="usr" placeholder="Identifiant">
+                                </div>
+                                <label for="pwd">Password:</label>
+                                <div class="input-group">
+                                    <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-lock"></span></span>
+                                    <input type="password" class="form-control" id="pwd" placeholder="Password">
+                                </div>
+                                <div class="input-group"><br>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-2">
+                                                <button type="submit" class="btn boton">New User?</button>
+                                            </div>
+                                            <div class="col-md-2 col-md-offset-2">
+                                                <div class="checkbox">
+                                                    <label><input type="checkbox" value="">Rester connecte</label>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="input-group"><br>
+                                            <p><a href="#" class="tooltip-test" title="Oublie votre mot de passe?">Oublie votre mot de passe?</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-default">Ok!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Fin de le Modal content-->
+            <div id="header">
+                <div class="container">
+                    <div class="row">
+                        <!-- <div class="col-xs-12 col-md-3 "><img class="logo" src="Logomakr_2fqD2V.png"> -->
+                    </div>
+                    <div class="col-xs-12 col-md-4 header">
+                        <div class="input-group col-xs-12" >
+                            <input type="text" class="form-control recherche"  placeholder="Recherche" aria-describedby="basic-addon2">
+                            <span class="input-group-btn">
+                                <button class="btn btn-secondary go" type="button">Go</button>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4 header" >
+                        <div class="col-xs-12 col-md-6 HeaderRight" >
+                            <p><span class="glyphicon glyphicon-earphone"></span> <strong>(+000) 123 345 653</strong></p>
+                        </div>
+                        <div class="col-xs-12 col-md-3" >
+                            <button type="button" class="btn btn-secondary login" data-toggle="modal" data-target="#login">Login</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Les ongles  -->
+        <div class="container">
+            <ul class="nav nav-tabs navbar-fixed-top">
+                <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+                <li><a data-toggle="tab" href="#presentation">Présentation</a></li>
+                <li><a data-toggle="tab" href="#biographie">Biographie</a></li>
+                <li><a data-toggle="tab" href="#photographies">Photographies</a></li>
+                <li><a data-toggle="tab" href="#goodies">Goodies</a></li>
+                <li><a data-toggle="tab" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <!--Section Jumbotron-->
+        <div class="tab-content">
+            <section id="home" class="tab-pane fade in active">
+                <div class="jumbotron container-fluid" style="height: 500px; margin: 0 auto; left: 0; top:0; width:1500px; height:500px">
+                    <p> Home </p>
+                </div>
+            </section>
+            <!-- Onglet Présentation -->
+            <section id="presentation" class="tab-pane fade" style="left: 0; top:0; width:1500px; height:500px">
+                <p> Presentation </p>
+                <div class="container">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" href="#presentation_dessin_anime" style="border:1px solid red">Dessin animé</a></li>
+                        <li><a data-toggle="tab" href="#presentation_jeux_video">Jeux vidéo</a></li>
+                    </ul>
+                    
+                    <div class="tab-content">
+                        <div id="presentation_dessin_anime" class="row tab-pane fade in active">
+                            <div class="col-md-8" style="height:100%; background-color:blue">
+                                <h1>Sonic</h1><p>Sonic est un hérisson anthropomorphique bleu céruléen de 15 ans qui possède la particularité de pouvoir courir à la vitesse du son, soit 1 224 km/h. Dans les comics Fleetway, il est également présenté comme exagérément arrogant. Dans toutes les séries confondues, Sonic est loyal et courageux : il est prêt à prendre de nombreux risques pour venir en aide à des innocents. Néanmoins, il ne se sent pas investi d'une « mission » quelconque, et fait cela non pas par devoir, mais par intérêt personnel. Il préfère vivre selon ses propres règles plutôt que celles des autres.
+                                Sonic est l'un des personnages les plus mystérieux de toute sa franchise. Il serait né sur Christmas Island, une île qui n'a jamais été vue dans aucun jeu. Toutefois, dans Sonic Adventure 2, lors du combat final, Shadow confie à Sonic qu'il pourrait être lui aussi une création du Professeur Gerald Robotnik dans la mesure où ils ont tous les deux les mêmes pouvoirs. Sonic voyage autour du globe et au-delà, à la recherche d'aventures et de sensations fortes, émerveillé de découvrir sans arrêt de nouveaux lieux à explorer et de légendaires secrets à découvrir. Son île préférée est South Island, qu'il visite plus d'une fois. C'est sur cette île qu'il rencontrera pour la première fois celui qui allait devenir son principal ennemi : le Docteur Ivo "Eggman" Robotnik. Dans Sonic Adventure 2, il est précisé que la planète sur laquelle les jeux se passent n'est pas la Terre mais Mobius. </p>
+                            </div>
+                            <div class="col-md-4" style="height:100%; background-color:green">
+                                <img src="" >
+                            </div>
+                        </div>
+                        <div id="presentation_jeux_video" class="row tab-pane fade">
+                            <div class="col-md-8" style="height: 100%; background-color:orange">
+                                <h1>Sonic the Hedgehog</h1><p>Sonic (ソニック, Sonikku?), enregistré en tant que marque commerciale sous le nom de Sonic the Hedgehog1 (Sonic le Hérisson), est un personnage de jeu vidéo et le personnage principal de la série de jeu vidéo Sonic the Hedgehog éditée par Sega, ainsi que d'un bon nombre de séries dérivées de comics, de dessins animés et d'un film. Sonic est devenu l'un des personnages de jeu vidéo les plus connus au monde, avec des jeux qui se sont vendus à plus de 70 millions d'exemplaires3. En 2005, Sonic est le premier personnage intronisé au Walk of Game, en même temps que Link et Mario4. es designers Naoto Ōshima, Hirokazu Yasuhara et le programmeur Yuji Naka sont généralement crédités pour la création du personnage5, un hérisson de 15 ans, qui a le pouvoir de courir à une vitesse supersonique et de se recroqueviller en une boule pour attaquer ses ennemis. Initialement cantonné au jeu de plate-forme, Sonic s'est depuis initié à d'autres styles comme le jeu de course (Sonic R), de flipper (Sonic the Hedgehog Spinball), ou de combat (Sonic Battle).</p>
+                            </div>
+                            <div class="col-md-4" style="width: 300px; height: 100%; background-color:yellow">
+                                <!-- <img src="texte"> -->
+                            </div>
+                        </div>
+                        </div> <!-- tab content div presentation-->
+                        
+                        </div> <!-- container -->
+                        </section><!-- Fin Section Présentation -->
+                        <section id="biographie" class="tab-pane fade">
+                            <div class="jumbotron container-fluid" style="height: 500px; margin: 0 auto; left: 0; top:0; width:1500px; height:500px">
+                                <p> Biographie </p>
+                                <div class="container">
+                                    
+                                    <<a href="#demo"  data-toggle="collapse"> <h2>1991</h2></a>
+                                    <div id="demo" class="collapse">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-md-6" style="background-color:yellow;"><p>Le premier jeu vidéo Sonic, Sonic the Hedgehog sorti le 23 juin 1991, est sorti dans le but de doter Sega d'une mascotte qui puisse rivaliser avec celle de leur concurrent Nintendo, Mario 2.</p>
+                                            </div>
+                                            <div class="col-md-6" style="background-color:blue;">
+                                                <p>Depuis, Sonic est devenu l'un des personnages de jeu vidéo le splus connus au monde, avec des jeux qui se sont vendus à plus de 70 millions d'exemplaires.</p>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#Maria" data-toggle="collapse"><h2>1998</h2></a>
+                                <div id="Maria" class="collapse">
+                                    <div class="col-md-6" style="background-color:orange;">
+                                        <p>Depuis Sonic Adventure, sorti en 1998, Sonic est redessiné par Yuji Uekawa, le dotant de plus grandes jambes, d'un corps moins sphérique, de spiquants plus tombants et des yeux verts.</p>
+                                        
+                                    </div>
+                                </div>
+                                
+                                <a href="#soleil" data-toggle="collapse"><h2>2018</h2></a>
+                                <div id="soleil" class="collapse">
+                                    <div class="col-md-6" style="background-color:pink;">
+                                        <p>Pour fêter les 25 ans d'existence du hérisson bleu, une adaptation cinématographique du jeu vidéo culte sortira dans les salles de cinéma en 2018.</p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="photographies" class="tab-pane fade">
+                        <div class="container-fluid" style="height: 500px; margin: 0 auto; left: 0; top:0; width:1500px; height:500px">
+                            <p> Photographies </p>
+                            <div class="container">
+                                
+                                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                    <!-- Wrapper for slides -->
+                                    <div class="carousel-inner">
+                                        <div class="item active">
+                                            <img src="http://sm.ign.com/t/ign_nl/video/6/6-minutes-/6-minutes-of-sonic-mania-gameplay-of-sonic-tales-and-knuckle_5u4t.300.jpg" alt="Sonic Noir et Bleu" style="width:100%; height: 400px;">
+                                        </div>
+                                        <div class="item">
+                                            <img src="http://www.animatieblog.nl/wp-content/uploads/2014/10/sonicboomcharacters.jpg" alt="Chicago" style="width:100%; height: 400px;">
+                                        </div>
+                                        
+                                        <div class="item">
+                                            <img src="http://kidslog.nl/wp-content/uploads/2011/05/pvsonic.jpg"
+                                 alt="New york" style="width:100%; height: 400px;">
+                                        </div>
+                                    </div>-->
+                                    <!-- Left and right controls -->
+                                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="goodies" class="tab-pane fade">
+                        <div class="jumbotron container-fluid" style="height: 500px; margin: 0 auto; left: 0; top:0; width:1500px; height:500px">
+                            <p> Goodies <span class="label label-success"></span> </p>
+                            <span class="label label-success"></span>
+                            <div class="container-fluid">
+                                <div class="row">
+            
+                                    <div class="col-md-4" style="background-color:white; width:200px; height:auto; margin:5px">
+                                        <img src="http://www.imagespourtoi.com/lesimages/sonic/images-sonic-3.jpg" style="width:100%;">
+                                        <br/>
+                                        <figcaption> Poster Sonic <span class="label label-success">New!</span> </figcaption>
+                                        
+                                        Quantité: <input class="quantite" type="text" value=0 name="quantite" style="width:50px">
+                                        <span class="w3-badge prix">9</span>€</p>
+                                    </div>
+                                    
+                                   
+                                    <div class="col-md-4" style="background-color:white; width:200px; height:auto; margin:5px">
+                                        <img src="https://i.ytimg.com/vi/malUMIV80xI/maxresdefault.jpg"  style="width:100%;"><br/>
+                                        <figcaption> Jeux vidéo </figcaption>
+                                        
+                                        Quantité: <input class="quantite" type="text" name="quantite" placeholder="0" style="width:50px">
+                                        <span class="w3-badge prix">15</span>€</p>
+                                    </div>
+
+                                    <div class="col-md-4" style="background-color:white; width:200px; height:auto; margin:5px">
+                                        <img src="http://lageekerie.com/11544-thickbox_default/casquette-sonic.jpg"  style="width:100%;"><br/>
+                                        <figcaption> Jeux vidéo </figcaption>
+                                        
+                                        Quantité: <input class="quantite" type="text" name="quantite" placeholder="0" style="width:50px">
+                                        <span class="w3-badge prix">20</span>€</p>
+                                    </div>
+
+                                    <!-- <div class="col-md-3" style="background-color:gray; width:200px; height:200px; margin:5px">
+                                    </div> -->
+                                </div>
+                            </div>
+                            
+                            <i style="font-size:20px" class="fa fa-shopping-basket" aria-hidden="true"></i> <input id="id_panier" type="text" name="panier" value="0" style="width:50px">€
+                            
+                            
+                            
+                        </div>
+                        <button onclick="previewBuy()" type="button" class="btn btn-info">Prévisualisation avant achat</button>
+                    </section>
+                    
+
+                    <section id="contact" class="tab-pane fade">
+                        <div class="jumbotron container-fluid" style="height: 500px; margin: 0 auto; left: 0; top:0; width:1500px; height:500px">
+                            
+                            <div class="container">
+                                <!-- Text input-->
+                                <form>
+                                    <div class="form-group">
+                                        
+                                        <div class="input-group" style="padding-bottom:10px">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                            <input id="nom" type="text" class="form-control" name="nom" placeholder="Nom" style="width:30%" required>
+                                        </div>
+                                        <div class="input-group" style="padding-bottom:10px">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                            <input id="prenom" type="text" class="form-control" name="prenom" placeholder="Prénom" style="width:30%" required>
+                                        </div>
+                                        <div class="input-group" style="padding-bottom:10px">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                            <input id="email" name="email" placeholder="Adresse email" class="form-control"  type="text" style="width:30%" required>
+                                        </div>
+                                        <div class="input-group" style="padding-bottom:10px">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                                            <input id="phone" name="phone" placeholder="Numéro de téléphone" class="form-control" type="text" style="width:30%" required>
+                                        </div>
+                                        <div class="input-group" style="padding-bottom:10px">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                                            <input id="address" name="address" placeholder="Adresse" class="form-control" type="text" style="width:30%" required>
+                                        </div>
+                                        <div class="input-group"  style="padding-bottom:10px">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                                            <textarea id="commentaire" class="form-control" rows="4" name="commentaire" placeholder="Commentaire" style="width:45%" required></textarea>
+                                        </div>
+                                        <div class="form-group" style="padding-bottom:10px">
+                                            <div>
+                                                <button onclick="contactForm()" class="btn btn-success" data-target="#myModal" data-toggle="modal">Envoyer <span class="glyphicon glyphicon-send"></span></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <form>
+                                    </div>
+                                    </div><!-- /.container -->
+                                    <!-- <div class="input-group">
+                                        <span class="input-group-addon" id="basic-addon1">Email</span>
+                                        <input type="text" class="form-control" placeholder="Your email" aria-describedby="basic-addon1">
+                                    </div> -->
+                                </div>
+                            </div>
+
+                            </section>
+
+                            <!-- Modal du formulaire -->
+                            <div class="modal fade" id="myModal" role="dialog"> <!-- class hide??? -->
+                                <div class="modal-dialog">
+                                    
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title" style="color:blue"><strong>Contact - Formulaire</strong></h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p id="content-modal">
+                                                <!-- Remplis la modal avec les données introduit par l'utilisateur-->
+                                            </p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-success" data-dismiss="modal">Valider</button>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+                            <!-- Message d'erreur pour le formulaire -->
+                        <!-- <div id="myAlert" style="border:1px solid red; background-color:#CF0A1D">
+                            <p>Veuillez introduire la donnée svp!</p>
+                        </div>    -->
+
+
+
+
+                        <!--Section Footer-->
+                        <footer id="my_footer" style="background-color: black">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sx-12 col-md-6 suscFoot">
+                                        <label><h2>SUBSCRIBE TO US</h2></label>
+                                        <form class="form-inline">
+                                            <div class="form-group" >
+                                                <input id="textarea" type="email" class="form-control mail" placeholder="Your email..">
+                                                <button id="bouton_send" type="submit" class="btn .btn-warning">Send</button>
+                                                
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <!-- <div class="col-xs-12 col-md-6 logoFoot">
+                                        <img width="200" height="100" src="Logomakr_2EbnMn.png">
+                                    </div> -->
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="row separator">
+                                    <div class="col-sx-12 col-md-6">
+                                        <label id="copyright"> &copy; 2017 One Movies. All rights reserved | Design by &lt;/BeCode&gt;</label>
+                                    </div>
+                                    <div class="col-sx-12 col-md-6 reFoot">
+                                        <a class="link_nav_bottom" href="">MOVIES</a>
+                                        <a class="link_nav_bottom" href="#">FAQ</a>
+                                        <a class="link_nav_bottom" href="#">ACTION</a>
+                                        <a class="link_nav_bottom" href="#">AVENTURE</a>
+                                        <a class="link_nav_bottom" href="#">COMEDY</a>
+                                        <a class="link_nav_bottom" href="#">ICONS</a>
+                                        <a class="link_nav_bottom page-scroll" href="#contact_us">CONTACT US</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </footer>
+                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+                        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+                        <script type="text/javascript">
+                        /* Si le montant est inférieur à 15€, l'utilisateur devra payer 10€ de frais de livraison. Si le montant est compris entre 16€ et 30€, les frais s'élèvent uniquement à 7€. Si le montant de la commande s'élève à plus de 31€, les frais de livraison sont gratuits.
+                        */
+                        /*var tableau;
+                        var totalAchat = 0;
+                        $('#id_quantite').on("keyup",function(){
+                        $('#id_panier').css("background-color","green");
+                        if(parseInt($('#id_quantite').val()) > 0){
+                        var total = parseInt($('#id_quantite').val()) * parseInt($('#prix').text());
+                        $('#id_panier').val( total );
+                        totalAchat += total;
+                        }
+                        }); */
+                        //document.getElementById("myModal").style.display = "none";
+                        //Afficher la modal du Contact
+
+                        //document.getElementById("message-erreur").style.display = "block";
+                        function contactForm(){ 
+                            var nom = document.getElementById("nom").value;
+                            var prenom = document.getElementById("prenom").value;
+                            var email = document.getElementById("email").value;
+                            var phone = document.getElementById("phone").value;
+                            var adresse = document.getElementById("address").value;
+                            var commentaire = document.getElementById("commentaire").value;
+
+                            if(nom.length === 0){
+                                //document.getElementById("message-erreur").style.display= "block"; //Afficher message Erreur
+                                document.getElementById("nom").style.backgroundColor = "red";
+                                document.getElementById("myModal").style.display = "none";
+                                document.getElementById("myModal").style.visibility = "hidden";                                
+        
+                                document.getElementById("myModal").setAttribute("data-dismiss", "modal"); //modal data-dismiss="modal"
+                                document.getElementById("myModal").className = "close";
+
+                            }else if(prenom.length === 0){
+                                document.getElementById("prenom").style.backgroundColor = "red";
+                            }else if(email.length === 0){
+                                document.getElementById("email").style.backgroundColor = "red";
+                            }else if(phone.length === 0){
+                                document.getElementById("phone").style.backgroundColor = "red";
+                            }else if(adresse.length === 0){
+                                document.getElementById("address").style.backgroundColor = "red";
+                            }else if(commentaire.length === 0){
+                                document.getElementById("commentaire").style.backgroundColor = "red";
+                            }else{
+                            //Rempli ma modal avec les données: myModal
+                            document.getElementById("content-modal").innerHTML = "Voici les données qui seront envoyées: " +
+                                                                           "<br/><br/><u>Nom</u>: " + nom +
+                                                                           "<br/><u>Prénom</u>: " + prenom +
+                                                                           "<br/><u>Email</u>: " + email +
+                                                                           "<br/><u>Adresse</u>: " + adresse +
+                                                                           "<br/><u>Téléphone</u>: " + phone +
+                                                                           "<br/><u>Commentaire</u>: " + commentaire +
+                                                                           "<br/><br/>Appuyer sur <strong>valider</strong> pour envoyer les données.";
+                           
+                            console.log("commentaire "+commentaire);
+                            document.getElementById("myModal").style.display = "block";
+                            }
+                    
+                        }
+                        /*$('#nom').focus(function(){
+                        $('#nom').css("border","1px solid green");
+                        });
+                        
+                        $('#nom').focusout(function(){
+                        if( $('#nom').length == 0 ){
+                        $('#nom').css("background-color","red");
+                        }
+                        }); */
+                        var totalAchat = 0;
+                        var total = 0;
+                        var tableauQuantite = $('.quantite');
+                        var tableauPrix = $('.prix');
+                        var longueur = tableauQuantite.length;
+                        var total_arr = [];
+                        /*Pour chaque quantité, quand j'ai un élément qui change alors je fais ma * et je change mon panier..*/
+                        $('.quantite').each(function(key){
+                        $(this).on("keyup",function(){
+                        var quantite =  parseInt( $(this).val() );
+                        console.log(" ici "+$(this).val().length);
+                        if( isNaN(quantite) ){
+                        quantite = 0;
+                        }
+                        var prix = parseInt( $(tableauPrix[key]).text() );
+                        total_arr[key] = quantite * prix;
+                        console.log("TEST: " + quantite);
+                        var total_all = 0;
+                        for (var i = 0; i < total_arr.length; i++) {
+                        total_all += total_arr[i];
+                        };
+                        $('#id_panier').val( total_all );
+                        totalAchat = total_all;
+                        /*var prix = parseInt( $(tableauPrix[key]).text() );
+                        total_arr[key] = quantite * prix;
+                        console.log("TEST: " + quantite);
+                        var total_all = 0;
+                        for (var i = 0; i < total_arr.length; i++) {
+                        total_all += total_arr[i];
+                        };
+                        $('#id_panier').val( total_all );
+                        totalAchat = total_all; */
+                        });
+                        });
+                        /*for (var i = 0; i<total_arr.length; i++) {
+                        totalAchat+=total_arr[i];
+                        console.log(totalAchat);
+                        };*/
+                        
+                        /*var longueur = tableauQuantite.length;  //Ou bien tableauQuantite.length
+                        for (var i=0; i< longueur; i++) {
+                        if( tableauPrix[i].value() > 0 ){
+                        total = parseInt();
+                        totalAchat += total;
+                        }
+                        if(parseInt($('#id_quantite').val()) > 0){
+                        var total = parseInt($('#id_quantite').val()) * parseInt($('#prix').text());
+                        $('#id_panier').val( total );
+                        totalAchat += total;
+                        }
+                        }; */
+                        
+                        /*var valeurQuantiteChoisie = document.getElementById('id_quantite').value;
+                        console.log("valeurQuantiteChoisie: "+valeurQuantiteChoisie);
+                        if(valeur < 0){
+                        document.getElementById('id_panier').text = valeurQuantiteChoisie * parseInt(document.getElementById('prix').value);
+                        } */
+                        function previewBuy(){
+                        if(totalAchat<15){
+                        alert("Voici le total de votre achat: " + totalAchat+"€"
+                        +"\n"+ "A cela il faudra ajouter 10€ de frais de livraison");
+                        }else if( totalAchat>=16 && totalAchat<=30 ){
+                        alert("Voici le total de votre achat: " + totalAchat+"€"
+                        +"\n"+ "A cela il faudra ajouter 7€ de frais de livraison");
+                        }else if(totalAchat > 31){
+                        alert("Voici le total de votre achat: " + totalAchat+"€"
+                        +"\n"+ "Les frais de livraison sont offertes!");
+                        }
+                        }
+                        </script>
+                        <script src="js/bootstrap.min.js"></script>
+                        <!-- Scrolling Nav JavaScript -->
+                        <script src="js/jquery.easing.min.js"></script>
+                        <!-- <script src="js/scrolling-nav.js"></script> -->
+                    </body>
+                </html>
