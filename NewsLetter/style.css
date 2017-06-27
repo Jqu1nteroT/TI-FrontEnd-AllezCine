@@ -1,0 +1,96 @@
+table{
+	margin:0 auto; 
+	padding: 0; 
+	width:auto; 
+	background-color: 
+	white;text-align: center;
+}
+
+td{
+   background-color: white;
+   text-align: left;
+   margin: 5px;
+ }
+   
+tr{
+   padding: 5px;
+}
+
+.top{
+	padding-top:10px;
+	padding-bottom:10px;
+	font-family:arial,sans-serif;
+	font-size:14px;
+	font-weight:300;
+	text-align:center; 
+	background-color: white;
+}
+
+.topa{
+	color:#a89682;
+	text-decoration:none
+}
+
+.top2{
+	font-family:arial,sans-serif;
+	font-size:11px;
+	color:#b9b29f;
+	padding-bottom:10px;
+	text-align:center; 
+	padding-top: 10px; 
+	background-color: white;
+}
+
+.topa2{
+	color:#b9b29f;
+	text-decoration:underline
+}
+
+.logo{
+	width: auto;
+	background-color: white; 
+	font-family:arial,sans-serif;
+	font-size:11px;
+	color:#b9b29f;
+	padding: 10px; 
+	text-align:center;
+}
+
+.premier{
+	height:200px;
+}
+
+.info1{
+	width:50%;
+}
+
+.info1>span{
+	padding-top:20px;
+}
+
+.info1>span>u{
+	color:orange; 
+	text-decoration: none;
+}
+
+.info2{
+	width:100%; 
+	margin: 2px;
+}
+
+.info2>span{
+	padding-top:20px;
+}
+
+.info2>span>u{
+	color:orange; 
+	text-decoration: none;
+}
+
+.promo{
+	padding-top:50px; 
+	text-align:center; 
+	padding-bottom:30px; 
+	background-color: orange; 
+	border-radius: 100px;
+}
