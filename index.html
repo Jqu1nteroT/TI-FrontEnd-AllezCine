@@ -6,343 +6,940 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" media="screen" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="style.css">
-		<!--<link rel="shortcut icon" type="image/png" href="img/hipsterlogogenerator_1495106664518.png">-->
+		<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+		<link rel="shortcut icon" type="image/png" href="Logomakr_6RmYdT.png">
 	</head>
-	<body data-spy="scroll" data-target=".navbar" data-offset="50">
-
-		<!-- Première DIV -->
-		<div class="modal fade" id="myModal" role="dialog">
-			<div class="modal-dialog">
-				
-				<!-- Modal content-->
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal">&times;</button>
-						<h4 class="modal-title">Login:</h4>
+	<body data-spy="scroll" data-target=".navbar" data-offset="50" id="page-top">
+		<!--COOKIES-->
+		<div id="barraaceptacion" style="display: block;">
+			<div class="inner">
+				<p>Nous vous demandons l'autorisation d'obtenir les données statistiques sur cette navigation sur le Web, en vertu réel du décret de la loi du 13/2012. Si vous continuez à parcourir, nous considérons l'acceptation de l'utilisation de cookies.</p>
+				<a href="javascript:void(0);" class="ok" onclick="PonerCookie();"><b>OK</b></a> |
+				<a href="http://politicadecookies.com" target="_blank" class="info">Plus information</a>
+			</div>
+		</div>
+		<!--le bouton flêche-->
+		<a class="page-scroll" href="#header">
+			<div class="divFleche" id="buton"></div></a>
+			<!-- Section Header-->
+			<!--Modal content verifie l'age-->
+			<!-- Lorsqu’on entre sur le site il faut contraindre l’utilisateur à entrer son âge. S’il a 18 ans et plus, l’autoriser à entrer sur le site, sinon le rediriger sur le site de moins de 18 ans. -->
+			<div id="container_modal">
+				<!--<button style="border:1px solid red" id="button_modal" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>-->
+				<!-- Modal -->
+				<div class="modal fade" id="myModal" role="dialog">
+					<div class="modal-dialog">
+						<!-- Contenu du modal -->
+						<div class="modal-content">
+							<div class="modal-header">
+								<!-- <button type="button" class="close" data-dismiss="modal">×</button> -->
+								<h4 class="modal-title">Important</h4>
+							</div>
+							<div class="modal-body">
+								<p>Veuillez svp introduire votre âge avant d'avoir accés au site:</p>
+								<div class="form-group">
+									<input id="input_age" type="text" class="form-control">
+								</div>
+							</div>
+							<div class="modal-footer">
+								<button onclick="testerAge()" id="button_validate" type="button" class="btn btn-success">Valider</button>
+								<!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+							</div>
+						</div>
 					</div>
-					<div class="modal-body">
-						<form class="form">
-							<label for="usr">Identifiant:</label>
-							<div class="input-group">
-								<span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-user"></span></span>
-								<input type="text" class="form-control" id="usr" placeholder="Identifiant">
-							</div>
-							<label for="pwd">Password:</label>
-							<div class="input-group">
-								<span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-lock"></span></span>
-								<input type="password" class="form-control" id="pwd" placeholder="Password">
-							</div>
-							<div class="input-group"><br>
-								<div class="container">
-									<div class="row">
-										<div class="col-md-2">
-											<button type="submit" class="btn boton">New User?</button>
-										</div>
-										<div class="col-md-2 col-md-offset-2">
-											<div class="checkbox">
-												<label><input type="checkbox" value="">Rester connecte</label>
+				</div>
+				
+			</div>
+			<!--fin de verifie l'age-->
+			<!-- Modal content login-->
+			<div class="modal fade" id="login" role="dialog">
+				<div class="modal-dialog">
+					<div class="modal-content" >
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h1 class="modal-title">Login:</h1>
+						</div>
+						<div class="modal-body">
+							<form class="form">
+								<label for="usr">Identifiant:</label>
+								<div class="input-group">
+									<span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-user"></span></span>
+									<input type="text" class="form-control" id="usr" placeholder="Identifiant">
+								</div>
+								<label for="pwd">Password:</label>
+								<div class="input-group">
+									<span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-lock"></span></span>
+									<input type="password" class="form-control" id="pwd" placeholder="Password">
+								</div>
+								<div class="input-group"><br>
+									<div class="container">
+										<div class="row">
+											<div class="col-md-2">
+												<button type="submit" class="btn boton">New User?</button>
 											</div>
+											<div class="col-md-2 col-md-offset-2">
+												<div class="checkbox">
+													<label><input type="checkbox" value="">Rester connecte</label>
+												</div>
+											</div>
+											
 										</div>
+									</div>
+								</div>
+								<div class="container-fluid">
+									<div class="row">
+										<div class="input-group"><br>
+											<p><a href="#" class="tooltip-test" title="Oublie votre mot de passe?">Oublie votre mot de passe?</a></p>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-default">Ok!</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--Fin de le Modal content-->
+			<div id="header">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-md-3 "><img class="logo" src="Logomakr_2fqD2V.png">
+						</div>
+						<div class="col-xs-12 col-md-4 header">
+							<div class="input-group col-xs-12" >
+								<input type="text" class="form-control recherche"  placeholder="Recherche" aria-describedby="basic-addon2">
+								<span class="input-group-btn">
+									<button class="btn btn-secondary go" type="button">Go</button>
+								</span>
+							</div>
+						</div>
+						<div class="col-xs-12 col-md-4 header" >
+							<div class="col-xs-12 col-md-6 HeaderRight" >
+								<p><span class="glyphicon glyphicon-earphone"></span> <strong>(+000) 123 345 653</strong></p>
+							</div>
+							<div class="col-xs-12 col-md-3" >
+								<button type="button" class="btn btn-secondary login" data-toggle="modal" data-target="#login">Login</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid">
+				<div class="row">
+					<nav class="navbar navbar-inverse" data-offset-top="85" role="navigation">
+						<div class="container">
+							<div class="navbar-header page-scroll">
+								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								</button>
+							</div>
+							<div>
+								<div class="collapse navbar-collapse" id="myNavbar">
+									<ul class="nav navbar-nav">
+										<li><a class="page-scroll" href="#header">Home</a></li>
+										<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Films <span class="caret"></span></a>
+										<ul class="dropdown-menu">
+											<li><a class="page-scroll" href="#">Actions</a></li>
+											<li><a class="page-scroll" href="#">Aventures</a></li>
+											<li><a class="page-scroll" href="#">Policiers</a></li>
+											<li><a class="page-scroll" href="#">...</a></li>
+										</ul>
+										<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Series <span class="caret"></span></a>
+										<ul class="dropdown-menu">
+											<li><a class="page-scroll" href="#">Actions</a></li>
+											<li><a class="page-scroll" href="#">Aventures</a></li>
+											<li><a class="page-scroll" href="#">Policiers</a></li>
+											<li><a class="page-scroll" href="#">...</a></li>
+										</ul>
+									</li>
+									<li><a class="page-scroll" href="#featured_movies">Featured Movies</a></li>
+									<li><a class="page-scroll" href="#featured_series">Featured series tv</a></li>
+									<li><a class="page-scroll" href="#shop_movies">Shop Movies</a></li>
+									<li><a class="page-scroll" href="#contact_us">Contact us</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+		<!--Section Jumbotron-->
+		<section id="accueil">
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner">
+					
+					<div class="item active">
+						<img src="https://i.ytimg.com/vi/dLmKio67pVQ/maxresdefault.jpg">
+						<div class="carousel-caption">
+							<div class="col-md-3"><h4>Title</h4></div>
+							<div class="col-md-10"><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p></div>
+						</div>
+						</div><!-- End Item -->
+						
+						<div class="item">
+							<img src="https://i.ytimg.com/vi/dLmKio67pVQ/maxresdefault.jpg">
+							<div class="carousel-caption">
+								<div class="col-md-3"><h4>Title</h4></div>
+								<div class="col-md-10"><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p></div>
+							</div>
+							</div><!-- End Item -->
+							
+							<div class="item">
+								<img src="https://i.ytimg.com/vi/dLmKio67pVQ/maxresdefault.jpg">
+								<div class="carousel-caption">
+									<div class="col-md-3"><h4>Title</h4></div>
+									<div class="col-md-10"><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p></div>
+								</div>
+								</div><!-- End Item -->
+								
+								<div class="item">
+									<img src="https://i.ytimg.com/vi/dLmKio67pVQ/maxresdefault.jpg">
+									<div class="carousel-caption">
+										<div class="col-md-3"><h4>Title</h4></div>
+										<div class="col-md-10"><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p></div>
+									</div>
+									</div><!-- End Item -->
+									<div class="item">
+										<img src="https://i.ytimg.com/vi/dLmKio67pVQ/maxresdefault.jpg">
+										<div class="carousel-caption">
+											<div class="col-md-3"><h4>Title</h4></div>
+											<div class="col-md-10"><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p></div>
+										</div>
+										</div><!-- End Item -->
 										
-									</div>
-								</div>
-							</div>
-							<div class="container-fluid">
-								<div class="row">
-									<div class="input-group"><br>
-										<p><a href="#" class="tooltip-test" title="Oublie votre mot de passe?">Oublie votre mot de passe?</a></p>
-									</div>
-								</div>
-							</div>
-						</form>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						<button type="button" class="btn btn-default">Ok!</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="header">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 col-md-3 "><img class="logo" src="Logomakr_2fqD2V.png">
-					</div>
-					<div class="col-xs-12 col-md-4 header">
-						<div class="input-group col-xs-12" >
-							<input type="text" class="form-control recherche"  placeholder="Recherche" aria-describedby="basic-addon2">
-							<span class="input-group-btn">
-								<button class="btn btn-secondary go" type="button">Go</button>
-							</span>
-						</div>
-					</div>
-					<div class="col-xs-12 col-md-4 header" >
-						<div class="col-xs-12 col-md-6 HeaderRight" >
-							<p><span class="glyphicon glyphicon-earphone"></span> <strong>(+000) 123 345 653</strong></p>
-						</div>
-						<div class="col-xs-12 col-md-3" >
-							<button type="button" class="btn btn-secondary login" data-toggle="modal" data-target="#myModal">Login</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="container-fluid">
-			<div class="row">
-				<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="85">
-					<div class="container">
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							</button>
-						</div>
-						<div>
-							<div class="collapse navbar-collapse" id="myNavbar">
-								<ul class="nav navbar-nav">
-									<li><a href="#">Home</a></li>
-									<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Films <span class="caret"></span></a>
-									<ul class="dropdown-menu">
-										<li><a href="#">Actions</a></li>
-										<li><a href="#">Aventures</a></li>
-										<li><a href="#">Policiers</a></li>
-										<li><a href="#">...</a></li>
-									</ul>
-									<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Series <span class="caret"></span></a>
-									<ul class="dropdown-menu">
-										<li><a href="#">Actions</a></li>
-										<li><a href="#">Aventures</a></li>
-										<li><a href="#">Policiers</a></li>
-										<li><a href="#">...</a></li>
-									</ul>
-								</li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</nav>
-		</div>
-	</div>
-	<!-- Deuxième DIV -->
-	<section id="accueil">
-		<div class="jumbotron container-fluid">
-			<ul class="pgwSlider">
-				<li><img src="#" alt="Paris, France" data-description="Eiffel Tower and Champ de Mars"></li>
-				<li><img src="#" alt="Montréal, QC, Canada" data-large-src="montreal.jpg"></li>
-				<li>
-					<img src="#">
-					<span>Shanghai, China</span>
-				</li>
-				<li>
-					<a href="http://www.nyc.gov" target="_blank">
-						<img src="#">
-						<span>New York, NY, USA</span>
-					</a>
-				</li>
-			</ul>
-		</div>
-		</section>
-		<!-- Troisiéme DIV -->
-		<div style="border:1px solid yellow; padding-top:20px; padding-bottom:20px; width:1000px;">
-			<div id="the_best_movies">
-				<div class="container" style="padding-top:20px; padding-bottom:20px">
-					<div class="row">
-						<div class="col-md-2" style="padding:0px">
-							<img src="http://www.konbini.com/fr/files/2013/11/saw-2004-22-g.jpg" alt="Saw Movies" height="130" width="100">
-							<p>2016</p>
-						</div>
-						<div class="col-md-2" style="padding:0px">
-							<img src="http://www.konbini.com/fr/files/2013/11/saw-2004-22-g.jpg" alt="Saw Movies" height="130" width="100">
-							<p>2016</p>
-						</div>
-						<div class="col-md-2" style="padding:0px">
-							<img src="http://www.konbini.com/fr/files/2013/11/saw-2004-22-g.jpg" alt="Saw Movies" height="130" width="100">
-							<p>2016</p>
-						</div>
-						<div class="col-md-2" style="padding:0px">
-							<img src="http://www.konbini.com/fr/files/2013/11/saw-2004-22-g.jpg" alt="Saw Movies" height="130" width="100">
-							<p>2016</p>
-						</div>
-						<div class="col-md-4" style="padding:0px">
-							<img src="http://www.konbini.com/fr/files/2013/11/saw-2004-22-g.jpg" alt="Saw Movies" height="130" width="100">
-							<p>2016</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<section id="featured_movies">
-			<div class="container-fluid">
-				<div class="row">
-					
-					<h5>FEATURED MOVIES</h5>
-					
-					<div class="container">
-						<div class="col-md-2">
-							<img src="images.jpeg" class="img-responsive">
-						</div>
-						<div class="col-md-2">
-							<img src="images.jpeg" class="img-responsive">
-						</div>
-						<div class="col-md-2"><img src="images.jpeg" class="img-responsive"></div>
-						
-						<div class="col-md-2">
-							<img src="images.jpeg" class="img-responsive">
-						</div>
-						<div class="col-md-2">
-							<img src="images.jpeg" class="img-responsive">
-						</div>
-						
-						<div class="col-md-2"><img src="images.jpeg" class="img-responsive"></div>
-						
-						
-						
-						<div class="col-md-2">
-							<img src="images.jpeg" class="img-responsive">
-						</div>
-						<div class="col-md-2">
-							<img src="images.jpeg" class="img-responsive">
-						</div>
-						<div class="col-md-2"><img src="images.jpeg" class="img-responsive"></div>
-						
-						<div class="col-md-2">
-							<img src="images.jpeg" class="img-responsive">
-						</div>
-						<div class="col-md-2">
-							<img src="images.jpeg" class="img-responsive">
-						</div>
-						
-						<div class="col-md-2"><img src="images.jpeg" class="img-responsive"></div>
-						
-					</div>
-				</div>
-			</div>
-		</section>
-		
-		<section id="featured_series">
-			<div class="container-fluid">
-				<div class="row">
-					<h5>FEATURED SERIES TV</h5>
-					<div class="container">
-						
-						<div class="col-md-2">
-							<img src="images.jpeg" class="img-responsive">
-						</div>
-						<div class="col-md-2">
-							<img src="images.jpeg" class="img-responsive">
-						</div>
-						<div class="col-md-2"><img src="images.jpeg" class="img-responsive"></div>
-						
-						<div class="col-md-2">
-							<img src="images.jpeg" class="img-responsive">
-						</div>
-						<div class="col-md-2">
-							<img src="images.jpeg" class="img-responsive">
-						</div>
-						
-						<div class="col-md-2"><img src="images.jpeg" class="img-responsive"></div>
-						
-						<div class="col-md-2">
-							<img src="images.jpeg" class="img-responsive">
-						</div>
-						<div class="col-md-2">
-							<img src="images.jpeg" class="img-responsive">
-						</div>
-						<div class="col-md-2"><img src="images.jpeg" class="img-responsive"></div>
-						
-						<div class="col-md-2">
-							<img src="images.jpeg" class="img-responsive">
-						</div>
-						<div class="col-md-2">
-							<img src="images.jpeg" class="img-responsive">
-						</div>
-						
-						<div class="col-md-2"><img src="images.jpeg" class="img-responsive"></div>
-						
-					</div>
-					
-				</div>
-				
-				
-			</div>
-		</section>
-		<section id="shop_movies">
-			<div class="container-fluid">
-				<div class="row">
-					<h5>SHOP MOVIES</h5>
-					
-				
-						
-						<div class="col-md-6" style="background-color:blue">
-						</div>
-						<div class="col-md-6" style="background-color:yellow">
-						</div>
-						
-						
-					</div>
-				</div>
-				<div class="container-fluid">
-					<div class="row">
-						
-						<div class="col-md-2">
-							<img src="images.jpeg" class="img-responsive">
-						</div>
-						<div class="col-md-2">
-							<img src="images.jpeg" class="img-responsive">
-						</div>
-						<div class="col-md-2"><img src="images.jpeg" class="img-responsive"></div>
-						
-						<div class="col-md-2">
-							<img src="images.jpeg" class="img-responsive">
-						</div>
-						<div class="col-md-2">
-							<img src="images.jpeg" class="img-responsive">
-						</div>
-						
-						<div class="col-md-2"><img src="images.jpeg" class="img-responsive"></div>
-						
-						
-						
-					</div>
-				</div>
-			</section>
-			<section id="contact_us">
-				<div class="container-fluid">
-					<div class="row">
-						contact_us
-					</div>
-				</div>				
-			</section>
-			<footer id="my_footer" style="padding-top:30px; position: absolute; bottom: 0">
-				<label style="color:orange">SUBSCRIBE TO US</label>
-				<footer id="my_footer">
-					<form class="form-inline">
-						<div class="form-group" style="border:1px solid white; padding:5px">
-							<input style="border-radius:0;" type="email" class="form-control" id="exampleInputEmail2" placeholder="Your email..">
-							<button id="bouton_send" style="border-radius:0;" type="submit" class="btn .btn-warning">Send</button>
-						</div>
-					</form>
-					<hr/>
-					<label id="copyright"> &copy; 2017 One Movies. All rights reserved | Design by BeCode</label>
-					<ul id="ul_footer">
-						<li><a href=""> <strong>MOVIES</strong> </a></li>
-						<li><a href=""> <strong>FAQ</strong> </a></li>
-						<li><a href=""> <strong>ACTION</strong> </a></li>
-						<li><a href=""> <strong>ADVENTURE</strong> </a></li>
-						<li><a href=""> <strong>COMEDY</strong> </a></li>
-						<li><a href=""> <strong>ICONS</strong> </a></li>
-						<li><a href=""> <strong>CONTACT US</strong> </a></li>
-					</ul>
-				</footer>
-			</footer>
-	
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-	
-</body>
-</html>
+										</div><!-- End Carousel Inner -->
+										<ul class="list-group col-sm-4">
+											<li data-target="#myCarousel" data-slide-to="0" class="list-group-item active">
+												<div class="col-md-3 mini">
+												</div>
+												<div class="col-md-9"><h4>Title:</h4>
+													<p>Lorem ipsum dolor sit amet consetetur sadipscing</p></div>
+												</li>
+												<li data-target="#myCarousel" data-slide-to="1" class="list-group-item">
+													<div class="col-md-3 mini">
+													</div>
+													<div class="col-md-9" ><h4>Title:</h4>
+														<p>Lorem ipsum dolor sit amet consetetur sadipscing</p></div>
+													</li>
+													<li data-target="#myCarousel" data-slide-to="2" class="list-group-item">
+														<div class="col-md-3 mini">
+														</div>
+														<div class="col-md-9" ><h4>Title:</h4>
+															<p>Lorem ipsum dolor sit amet consetetur sadipscing</p></div>
+														</li>
+														<li data-target="#myCarousel" data-slide-to="3" class="list-group-item">
+															<div class="col-md-3 mini">
+															</div>
+															<div class="col-md-9" ><h4>Title:</h4>
+																<p>Lorem ipsum dolor sit amet consetetur sadipscing</p></div>
+															</li>
+															<li data-target="#myCarousel" data-slide-to="4" class="list-group-item">
+																<div class="col-md-3 mini">
+																</div>
+																<div class="col-md-9"><h4>Title:</h4>
+																	<p>Lorem ipsum dolor sit amet consetetur sadipscing</p></div>
+																</li>
+															</ul>
+															<!-- Controls -->
+															<div class="carousel-controls">
+																<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+																	<span class="glyphicon glyphicon-chevron-left"></span>
+																</a>
+																<a class="right carousel-control" href="#myCarousel" data-slide="next">
+																	<span  class="glyphicon glyphicon-chevron-right"></span>
+																</a>
+															</div>
+															</div><!-- End Carousel -->
+														</div>
+													</div>
+												</section>
+												<!--réseaux sociaux-->
+												<div id="les_4_reseaux_sociaux">
+													<a target="_blank" href="https://www.facebook.com/">
+														<div class="reseau_sociaux" id="facebook">
+															<p>Facebook</p>
+															<div class="icon">
+																<i class="fa fa-facebook red" aria-hidden="true"></i>
+															</div>
+														</div>
+													</a>
+													<a target="_blank" href="https://www.twitter.com">
+														<div class="reseau_sociaux" id="tweeter">
+															<p>Twitter</p>
+															<div class="icon">
+																<i class="fa fa-twitter red" aria-hidden="true"></i>
+															</div>
+														</div>
+													</a>
+													<a target="_blank" href="https://www.dribbble.com">
+														<div class="reseau_sociaux" id="dribbble">
+															<p>Dribbble</p>
+															<div class="icon">
+																<i class="fa fa-bullseye red" aria-hidden="true"></i>
+															</div>
+														</div>
+													</a>
+													<a target="_blank" href="https://www.googleplus.com">
+														<div class="reseau_sociaux" id="googlePlus">
+															<p>Google+</p>
+															<div class="icon">
+																<i class="fa fa-google-plus red" aria-hidden="true"></i>
+															</div>
+														</div>
+													</a>
+												</div>
+												<!-- Section News Movies -->
+												<section id="New_movies">
+													<div class="container marc">
+														<div id="myCarousel1" class="carousel slide" data-ride="carousel">
+															<div class="carousel-inner">
+																<div class="item active">
+																	<div class="row slider" >
+																		<div class="col-xs-2 col-md-2 poster" >
+																			<img src="http://www.ecartelera.com/images/noticias/fotos/34700/34732/1.jpg">
+																			<figcaption>lorem ipsun</figcaption>
+																			<p><b>lorem</b> ipsum</p>
+																		</div>
+																		<div class="col-xs-2 col-md-2 poster" >
+																			<img src="http://www.joblo.com/timthumb.php?src=/posters/images/full/Spider-Man-Homecoming-poster-2-large.jpg&h=600&q=100">
+																			<figcaption>lorem ipsun</figcaption>
+																			<p>lorem ipsun</p>
+																		</div>
+																		<div class="col-xs-2 col-md-2 poster" >
+																			<img src="http://www.joblo.com/posters/images/full/panther-poster-large.jpg">
+																			<figcaption>lorem ipsun</figcaption>
+																			<p>lorem ipsun</p>
+																		</div>
+																		<div class="col-xs-2 col-md-2 poster" >
+																			<img src="http://www.joblo.com/posters/images/full/the-last-jedi.jpg">
+																			<figcaption>lorem ipsun</figcaption>
+																			<p>lorem ipsun</p>
+																		</div>
+																		<div class="col-xs-2 col-md-2 poster" >
+																			<img src="http://www.joblo.com/posters/images/full/alien-covenant-poster.jpg">
+																			<figcaption>lorem ipsun</figcaption>
+																			<p>lorem ipsun</p>
+																		</div>
+																	</div>
+																</div>
+																<div class="item">
+																	<div class="row slider">
+																		<div class="col-xs-2 col-md-2 poster">
+																			<img src="https://www.cinematerial.com/media/posters/md/7a/7ajvdavw.jpg?v=1456368002pa ">
+																			<figcaption>lorem ipsun</figcaption>
+																			<p>lorem ipsun</p>
+																		</div>
+																		<div class="col-xs-2 col-md-2 poster">
+																			<img src="http://www.joblo.com/posters/images/full/john-wick-chapter-2-tposter-gallery.jpg">
+																			<figcaption>lorem ipsun</figcaption>
+																			<p>lorem ipsun</p>
+																		</div>
+																		<div class="col-xs-2 col-md-2 poster">
+																			<img src="http://www.joblo.com/posters/images/full/wonder-woman-poster.jpg">
+																			<figcaption>lorem ipsun</figcaption>
+																			<p>lorem ipsun</p>
+																		</div>
+																		<div class="col-xs-2 col-md-2 poster">
+																			<img src="http://www.joblo.com/posters/images/full/war-dogs-poster.jpg ">
+																			<figcaption>lorem ipsun</figcaption>
+																			<p>lorem ipsun</p>
+																		</div>
+																		<div class="col-xs-2 col-md-2 poster">
+																			<img src="http://www.joblo.com/posters/images/full/squad-gposter-gallery.jpg">
+																			<figcaption>lorem ipsun</figcaption>
+																			<p>lorem ipsun</p>
+																		</div>
+																	</div>
+																</div>
+																
+																<div class="item">
+																	<div class="row slider">
+																		<div class="col-xs-2 col-md-2 poster"">
+																			<img src="https://cdn.traileraddict.com/content/20th-century-fox/logan-2017-poster-2.jpg">
+																			<figcaption>lorem ipsun</figcaption>
+																			<p>lorem ipsun</p>
+																		</div>
+																		<div class="col-xs-2 col-md-2 poster"">
+																			<img src="http://www.joblo.com/posters/images/full/captain_america_civil_war_ver2.jpg">
+																			<figcaption>lorem ipsun</figcaption>
+																			<p>lorem ipsun</p>
+																		</div>
+																		<div class="col-xs-2 col-md-2 poster"">
+																			<img src="http://www.joblo.com/posters/images/full/apocalypse-destroy-poster.jpg">
+																			<figcaption>lorem ipsun</figcaption>
+																			<p>lorem ipsun</p>
+																		</div>
+																		<div class="col-xs-2 col-md-2 poster"">
+																			<img src="http://www.joblo.com/posters/images/full/warcraft-rbposter-gallery.jpg">
+																			<figcaption>lorem ipsun</figcaption>
+																			<p>lorem ipsun</p>
+																		</div>
+																		<div class="col-xs-2 col-md-2 poster"">
+																			<img src="http://www.joblo.com/posters/images/full/the-hobbit-the-battle-of-the-five-armies-poster.jpg">
+																			<figcaption>lorem ipsun</figcaption>
+																			<p>lorem ipsun</p>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</section>
+													<!--Setction Featured Movies (Maria)-->
+													<section id="featured_movies">
+														<div class="container-fluid" >
+															<div class="row title">
+																<h1>FEATURED MOVIES</h1>
+															</div>
+														</div>
+														<div class="container">
+															<div class="row space">
+																<div class="btn-group" id="btn-group">
+																	<button type="button" class=" buttonMovies btn" id="All">All</button>
+																	<button type="button" class=" buttonMovies btn" id="Actions">Actions</button>
+																	<button type="button" class=" buttonMovies btn" id= "Policiers">Policiers</button>
+																	<button type="button" class=" buttonMovies btn" id="Romans">Romans</button>
+																</div>
+															</div>
+														</div>
+														<div class="container">
+															<div class="row movies">
+																<div class="col-md-2 All Policiers posterM">
+																	<img src="http://www.joblo.com/posters/images/full/logan-poster-3.jpg" class="img-responsive"><figcaption>lorem ipsun</figcaption><p>2016</p>
+																</div>
+																<div class="col-md-2 All Actions posterM">
+																	
+																	<img src="http://www.joblo.com/posters/images/full/logan-poster-3.jpg" class="img-responsive"><figcaption>Dommage Collatéral</figcaption>
+																</div>
+																<div class="col-md-2 All Actions posterM">
+																	
+																	<img src="http://www.joblo.com/posters/images/full/logan-poster-3.jpg" class="img-responsive"><figcaption>Fast and Furious</figcaption>
+																</div>
+																
+																<div class="col-md-2 All Actions posterM">
+																	
+																	<img src="http://www.joblo.com/posters/images/full/logan-poster-3.jpg" class="img-responsive"><figcaption>MI3 </figcaption>
+																	
+																</div>
+																<div class="col-md-2 All Policiers posterM">
+																	
+																	<img src="http://www.joblo.com/posters/images/full/logan-poster-3.jpg" class="img-responsive"><figcaption>Seven </figcaption>
+																	
+																</div>
+																
+																<div class="col-md-2 All Policiers posterM">
+																	
+																	<img src="http://www.joblo.com/posters/images/full/logan-poster-3.jpg" class="img-responsive"><figcaption>Léon </figcaption>
+																	
+																</div>
+																
+															</div>
+														</div>
+														
+														<div class="container">
+															<div class="row movies">
+																<div class="col-md-2 All Policiers posterM">
+																	<figure>
+																		<img src="http://www.joblo.com/posters/images/full/Deadpool-poster-8.jpg" class="img-responsive"><figcaption>HEAT 2016</figcaption>
+																	</figure>
+																</div>
+																<div class="col-md-2 All Actions posterM">
+																	<figure>
+																	<img src="http://www.joblo.com/posters/images/full/Deadpool-poster-8.jpg" class="img-responsive"><figcaption>The Expendables 2016</figcaption></figure>
+																</div>
+																<div class="col-md-2 All Romans posterM">
+																	<figure>
+																		<img src="http://www.joblo.com/posters/images/full/Deadpool-poster-8.jpg" class="img-responsive">
+																	<figcaption>The Back-Up Plan 2016</figcaption></figure>
+																</div>
+																
+																<div class="col-md-2 All Romans posterM">
+																	<figure>
+																	<img src="http://www.joblo.com/posters/images/full/Deadpool-poster-8.jpg" class="img-responsive"><figcaption>The Notebook 2016</figcaption></figure>
+																	
+																</div>
+																<div class="col-md-2 All Romans posterM">
+																	<figure>
+																	<img src="http://www.joblo.com/posters/images/full/Deadpool-poster-8.jpg" class="img-responsive"><figcaption>The Love Letter 2016</figcaption></figure>
+																</div>
+																
+																<div class="col-md-2 All Romans posterM">
+																	<figure>
+																		<img src="http://www.joblo.com/posters/images/full/Deadpool-poster-8.jpg" class="img-responsive"><figcaption>Je Te Promets 2016</figcaption>
+																	</figure></div>
+																</div>
+															</div>
+															<!--centré plus de films-->
+															
+															<div id="demo" class="collapse">
+																<div class="container">
+																	<div class="row movies">
+																		<div class="col-md-2 All posterM">
+																			<figure>
+																			<img src="http://www.joblo.com/timthumb.php?src=/posters/images/full/gotgv2-poster.jpg&h=600&q=100" class="img-responsive"><figcaption>Un Long Dimanche De Fiançailles 2016</figcaption></figure>
+																		</div>
+																		<div class="col-md-2 All posterM">
+																			<figure>
+																				<img src="http://www.joblo.com/timthumb.php?src=/posters/images/full/gotgv2-poster.jpg&h=600&q=100" class="img-responsive"><figcaption>La Cité De Dieu 2016</figcaption>
+																			</figure>
+																		</div>
+																		<div class="col-md-2 All posterM">
+																			<figure>
+																			<img src="http://www.joblo.com/timthumb.php?src=/posters/images/full/gotgv2-poster.jpg&h=600&q=100" class="img-responsive"><figcaption>L'attaque Metro 123 2016</figcaption></figure>
+																		</div>
+																		
+																		<div class="col-md-2 All posterM">
+																			<figure>
+																				<img src="http://www.joblo.com/timthumb.php?src=/posters/images/full/gotgv2-poster.jpg&h=600&q=100" class="img-responsive"><figcaption>I Robot 2016</figcaption>
+																			</figure>
+																		</div>
+																		<div class="col-md-2 All posterM">
+																			<figure>
+																				<img src="http://www.joblo.com/timthumb.php?src=/posters/images/full/gotgv2-poster.jpg&h=600&q=100" class="img-responsive"><figcaption>SIN CITY 2016</figcaption>
+																			</figure>
+																		</div>
+																		
+																		<div class="col-md-2 All posterM">
+																			<figure>
+																				<img src="http://www.joblo.com/timthumb.php?src=/posters/images/full/gotgv2-poster.jpg&h=600&q=100" class="img-responsive"><figcaption>Tropa De Elite 2016</figcaption>
+																			</figure>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="container">
+																<div class="row">
+																	<button type="button" class="btn buttonPlus" data-toggle="collapse" data-target="#demo">PLUS DE FILMS</button>
+																</div>
+															</div>
+														</section>
+														<!--Section Series tv-->
+														<section id="featured_series">
+															<div class="container-fluid" >
+																<div class="row title">
+																	<h1>FEATURED SERIES TV</h1>
+																</div>
+															</div>
+															<div class="container">
+																<div class="row space">
+																	<div class="btn-group" id="btn-group">
+																		<button type="button" class=" buttonMovies btn" id="All">All</button>
+																		<button type="button" class=" buttonMovies btn" id="Actions">Actions</button>
+																		<button type="button" class=" buttonMovies btn" id= "Policiers">Policiers</button>
+																		<button type="button" class=" buttonMovies btn" id="Romans">Romans</button>
+																	</div>
+																</div>
+															</div>
+															<div class="container">
+																<div class="row movies">
+																	<div class="col-md-2 All Policiers posterM">
+																		<img src="https://pmcdeadline2.files.wordpress.com/2016/06/mrrobot_s2_keyart_press1.jpg?w=625&h=926" class="img-responsive"><figcaption>lorem ipsun</figcaption><p>2016</p>
+																	</div>
+																	<div class="col-md-2 All Actions posterM">
+																		
+																		<img src="https://pmcdeadline2.files.wordpress.com/2016/06/mrrobot_s2_keyart_press1.jpg?w=625&h=926" class="img-responsive"><figcaption>Dommage Collatéral</figcaption>
+																	</div>
+																	<div class="col-md-2 All Actions posterM">
+																		
+																		<img src="https://pmcdeadline2.files.wordpress.com/2016/06/mrrobot_s2_keyart_press1.jpg?w=625&h=926" class="img-responsive"><figcaption>Fast and Furious</figcaption>
+																	</div>
+																	
+																	<div class="col-md-2 All Actions posterM">
+																		
+																		<img src="https://pmcdeadline2.files.wordpress.com/2016/06/mrrobot_s2_keyart_press1.jpg?w=625&h=926" class="img-responsive"><figcaption>MI3 </figcaption>
+																		
+																	</div>
+																	<div class="col-md-2 All Policiers posterM">
+																		
+																		<img src="https://pmcdeadline2.files.wordpress.com/2016/06/mrrobot_s2_keyart_press1.jpg?w=625&h=926" class="img-responsive"><figcaption>Seven </figcaption>
+																		
+																	</div>
+																	
+																	<div class="col-md-2 All Policiers posterM">
+																		
+																		<img src="https://pmcdeadline2.files.wordpress.com/2016/06/mrrobot_s2_keyart_press1.jpg?w=625&h=926" class="img-responsive"><figcaption>Léon </figcaption>
+																		
+																	</div>
+																	
+																</div>
+															</div>
+															
+															<div class="container">
+																<div class="row movies">
+																	<div class="col-md-2 All Policiers posterM">
+																		<figure>
+																			<img src="https://s-media-cache-ak0.pinimg.com/564x/f6/4f/89/f64f890c539e466d3f275a33ae818ace.jpg" class="img-responsive"><figcaption>HEAT 2016</figcaption>
+																		</figure>
+																	</div>
+																	<div class="col-md-2 All Actions posterM">
+																		<figure>
+																		<img src="https://s-media-cache-ak0.pinimg.com/564x/f6/4f/89/f64f890c539e466d3f275a33ae818ace.jpg" class="img-responsive"><figcaption>The Expendables 2016</figcaption></figure>
+																	</div>
+																	<div class="col-md-2 All Romans posterM">
+																		<img src="https://s-media-cache-ak0.pinimg.com/564x/f6/4f/89/f64f890c539e466d3f275a33ae818ace.jpg" class="img-responsive">
+																	<figcaption>The Back-Up Plan 2016</figcaption></figure>
+																</div>
+																
+																<div class="col-md-2 All Romans posterM">
+																	
+																	<img src="https://s-media-cache-ak0.pinimg.com/564x/f6/4f/89/f64f890c539e466d3f275a33ae818ace.jpg" class="img-responsive"><figcaption>The Notebook 2016</figcaption>
+																	
+																</div>
+																<div class="col-md-2 All Romans posterM">
+																	<figure>
+																	<img src="https://s-media-cache-ak0.pinimg.com/564x/f6/4f/89/f64f890c539e466d3f275a33ae818ace.jpg" class="img-responsive"><figcaption>The Love Letter 2016</figcaption></figure>
+																</div>
+																
+																<div class="col-md-2 All Romans posterM">
+																	<figure>
+																		<img src="https://s-media-cache-ak0.pinimg.com/564x/f6/4f/89/f64f890c539e466d3f275a33ae818ace.jpg" class="img-responsive"><figcaption>Je Te Promets 2016</figcaption>
+																	</figure></div>
+																</div>
+															</div>
+															<!--centré plus de films-->
+															
+															<div id="series" class="collapse">
+																<div class="container">
+																	<div class="row movies">
+																		<div class="col-md-2 All posterM">
+																			<figure>
+																			<img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/6f1c7f40664543.5787e03bf042c.jpg" class="img-responsive"><figcaption>Un Long Dimanche De Fiançailles 2016</figcaption></figure>
+																		</div>
+																		<div class="col-md-2 All posterM">
+																			<figure>
+																				<img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/6f1c7f40664543.5787e03bf042c.jpg" class="img-responsive"><figcaption>La Cité De Dieu 2016</figcaption>
+																			</figure>
+																		</div>
+																		<div class="col-md-2 All posterM">
+																			<figure>
+																			<img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/6f1c7f40664543.5787e03bf042c.jpg" class="img-responsive"><figcaption>L'attaque Metro 123 2016</figcaption></figure>
+																		</div>
+																		
+																		<div class="col-md-2 All posterM">
+																			<figure>
+																				<img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/6f1c7f40664543.5787e03bf042c.jpg" class="img-responsive"><figcaption>I Robot 2016</figcaption>
+																			</figure>
+																		</div>
+																		<div class="col-md-2 All posterM">
+																			<figure>
+																				<img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/6f1c7f40664543.5787e03bf042c.jpg" class="img-responsive"><figcaption>SIN CITY 2016</figcaption>
+																			</figure>
+																		</div>
+																		
+																		<div class="col-md-2 All posterM">
+																			<figure>
+																				<img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/6f1c7f40664543.5787e03bf042c.jpg" class="img-responsive"><figcaption>Tropa De Elite 2016</figcaption>
+																			</figure>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="container">
+																<div class="row">
+																	<button type="button" class="btn buttonPlus" data-toggle="collapse" data-target="#series">PLUS DE FILMS</button>
+																</div>
+															</div>
+															
+														</section>
+														<!--Section Shop Movies (Static)-->
+														<section id="shop_movies">
+															<div class="container-fluid">
+																<div class="row title">
+																	<h1>SHOP MOVIES</h1>
+																</div>
+															</div>
+															<div class="container">
+																<div class="row flecheShop">
+																	<a href="#" class="butonShop btn btn-lg">
+																		<span class="glyphicon glyphicon-chevron-left"></span></a>
+																		<a href="#" class="butonShop btn btn-lg">
+																			<span class="glyphicon glyphicon-chevron-right"></span></a>
+																		</div>
+																	</div>
+																	<!--video et info-->
+																	<div class="container">
+																		<div class="row">
+																			<div class="col-md-6 presentation">
+																				<div class="embed-responsive embed-responsive-16by9">
+																					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dKrVegVI0Us"></iframe>
+																				</div>
+																			</div>
+																			<div class="description col-md-6">
+																				<h4>CIVIL WAR CAPTAIN AMERICA</h4>
+																				<div class="col-md-3">
+																					<strong class="resume">Resume :</strong>
+																				</div>
+																				<div class="col-md-9">
+																					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo aspernatur sapiente fugit non, assumenda quasi beatae sint repudiandae sunt debitis tempora nisi quidem deserunt facilis sit quo itaque a repellat.</p>
+																				</div>
+																				<div class="col-md-3">
+																					<strong class="date">Date de sortie :</strong>
+																				</div>
+																				<div class="col-md-9">
+																					<p>may 06, 2016</p>
+																				</div>
+																				<div class="col-md-3">
+																					<strong class="genre">Gener :</strong>
+																				</div>
+																				<div class="col-md-9">
+																					<p>Action / Adventure</p>
+																				</div>
+																				<div class="col-md-3">
+																					<strong class="prix">Prix :</strong>
+																				</div>
+																				<div class="col-md-9">
+																					<p>...</p>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<!--Gallery-->
+																	<div class="container">
+																		<div class="row gallery">
+																			<div class="col-md-2">
+																				<img src="http://www.joblo.com/posters/images/full/logan-poster-3.jpg" class="img-responsive"><figcaption>lorem ipsun</figcaption><p>2016 <b>15,00‎ Euro</b></p>
+																			</div>
+																			<div class="col-md-2">
+																				<img src="http://www.joblo.com/timthumb.php?src=/posters/images/full/runner-poster2-large.jpg&h=600&q=100" class="img-responsive"><figcaption style="text-align: center;">lorem ipsun</figcaption><p>2016 <b>15,00‎ Euro</b></p>
+																			</div>
+																			<div class="col-md-2">
+																				<img src="http://www.joblo.com/timthumb.php?src=/posters/images/full/annabelle_creation_poster.jpg&h=600&q=100" class="img-responsive"><figcaption>lorem ipsun</figcaption><p>2016 <b>15,00‎ Euro</b></p>
+																			</div>
+																			<div class="col-md-2">
+																				<img src="http://www.joblo.com/timthumb.php?src=/posters/images/full/justice-league-poster-new.jpg&h=600&q=100" class="img-responsive"><figcaption>lorem ipsun</figcaption><p>2016 <b>15,00‎ Euro</b></p>
+																			</div>
+																			<div class="col-md-2">
+																				<img src="http://www.joblo.com/timthumb.php?src=/posters/images/full/the-last-jedi.jpg&h=600&q=100" class="img-responsive"><figcaption>lorem ipsun</figcaption><p>2016 <b>15,00‎ Euro</b></p>
+																			</div>
+																			<div  class="col-md-2">
+																				<img src="http://www.joblo.com/timthumb.php?src=/posters/images/full/capt-america2-teaser-poster.jpg&h=600&q=100" class="img-responsive"><figcaption>lorem ipsun</figcaption><p>2016 <b>15,00‎ Euro</b></p>
+																			</div>
+																		</div>
+																	</div>
+																</section>
+																<!--Section Contac US-->
+																<section id="contact_us">
+																	<div class="container-fluid">
+																		<div class="row title">
+																			<h1>CONTACT US</h1>
+																		</div>
+																	</div>
+																	
+																	<div class="container">
+																		<div class="row">
+																			<div class=" col-xs-12 col-md-3 info">
+																				<img class="petitLogo"  src="images/Logomakr_67keu7.png">
+																				<h3>Address</h3>
+																			</div>
+																			<div class=" col-xs-12 col-md-3 info">
+																				<img class="petitLogo"  src="images/Logomakr_40jEOX.png">
+																				<h3>Call</h3><br>
+																				
+																				<p>+123456677890</p>
+																				<p>+123456677890</p>
+																				<p>+123456677890</p>
+																				
+																			</div>
+																			<div class=" col-xs-12 col-md-3 info">
+																				<img class="petitLogo"  src="images/Logomakr_5NICSx.png">
+																				<h3>Email</h3><br>
+																				<p>example1@gmail.com</p>
+																				<p>example2@gmail.com</p>
+																				<p>example3@gmail.com</p>
+																				
+																			</div>
+																			<div class=" col-xs-12 col-md-3 info">
+																				<img class="petitLogo"  src="images/Logomakr_1sLmM2.png">
+																				<h3>Social media</h3>
+																				<div class="facebook">
+																					<img src="images/Logomakr_82RQHT.png"><a href="#">Facebook</a>
+																				</div>
+																				<div class="twitter">
+																					<img src="images/Logomakr_3Bl7Gs.png"><a href="#">Twitter</a>
+																				</div>
+																				<div class="google">
+																					<img src="images/Logomakr_6DcVLI.png"><a href="#">Google+</a>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="container">
+																		<div class="row">
+																			<div class=" col-xs-12 col-md-6 champs">
+																				<input type="text" class="form-control mail" placeholder="FIRST NAME">
+																			</div>
+																			<div class=" col-xs-12 col-md-6 champs">
+																				<input type="text" class="form-control mail" placeholder="LAST NAME">
+																			</div>
+																			<div class=" col-xs-12 col-md-6 champs">
+																				<input type="text" class="form-control mail" placeholder="EMAIL">
+																			</div>
+																			<div class=" col-xs-12 col-md-6 champs">
+																				<input type="text" class="form-control mail" placeholder="SUJECT">
+																			</div>
+																			<div class=" col-xs-12 col-md-12 champs">
+																				<textarea class="form-control mail" id="exampleTextarea" rows="4"placeholder="YOUR MESSAGE"></textarea>
+																			</div>
+																			<div class=" col-xs-12 col-md-12 send">
+																				<button type="button" class="btn btn-secondary sendMsn">SEND MESAGE</button>
+																			</div>
+																		</div>
+																	</div>
+																</section>
+																<!--Section Footer-->
+																<footer id="my_footer">
+																	<div class="container">
+																		<div class="row">
+																			<div class="col-sx-12 col-md-6 suscFoot">
+																				<label><h2>SUBSCRIBE TO US</h2></label>
+																				<form class="form-inline">
+																					<div class="form-group" >
+																						<input id="textarea" type="email" class="form-control mail" placeholder="Your email..">
+																						<button id="bouton_send" type="submit" class="btn .btn-warning">Send</button>
+																						
+																					</div>
+																				</form>
+																			</div>
+																			<div class="col-xs-12 col-md-6 logoFoot">
+																				<img width="200" height="100" src="Logomakr_2EbnMn.png">
+																			</div>
+																		</div>
+																	</div>
+																	<div class="container">
+																		<div class="row separator">
+																			<div class="col-sx-12 col-md-6">
+																				<label id="copyright"> &copy; 2017 One Movies. All rights reserved | Design by &lt;/BeCode&gt;</label>
+																			</div>
+																			<div class="col-sx-12 col-md-6 reFoot">
+																				<a class="link_nav_bottom" href="">MOVIES</a>
+																				<a class="link_nav_bottom" href="#">FAQ</a>
+																				<a class="link_nav_bottom" href="#">ACTION</a>
+																				<a class="link_nav_bottom" href="#">AVENTURE</a>
+																				<a class="link_nav_bottom" href="#">COMEDY</a>
+																				<a class="link_nav_bottom" href="#">ICONS</a>
+																				<a class="link_nav_bottom page-scroll" href="#contact_us">CONTACT US</a>
+																			</div>
+																		</div>
+																	</div>
+																</footer>
+																<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+																<!--le bouton flêche-->
+																<script type="text/javascript">
+																var ma_div2 = document.createElement('div');
+																ma_div2.id = 'div_fleche';
+																ma_div2.borderRadius = '100px';
+																var my_button = document.createElement('button');
+																my_button.id = 'button_fleche';
+																ma_div2.appendChild(my_button);
+																//<i class="fa fa-arrow-up" aria-hidden="true"></i>
+																//<i class="fa fa-arrow-up" aria-hidden="true" style="font-size:20px; color:white"></i>
+																var i = document.createElement('i');
+																i.id ='test';
+																i.className = "fa fa-long-arrow-up";
+																i.setAttribute('aria-hidden', 'false');
+																i.setAttribute('color','white');
+																
+																my_button.appendChild(i);
+																ma_div2.appendChild(my_button);
+																
+																document.getElementById("buton").appendChild(ma_div2);
+																$( document ).ready(function() {
+																console.log("ready!");
+																//$('#container_modal').modal();
+																//window.location.href="file:///home/user/Documents/TI-FrontEnd-AllezCine/index.html";
+																//modal age
+																$('#myModal').modal();
+																var ok = window.location.href.length;
+																console.log(ok+ " OK");
+																if(ok === 57){
+																$('#myModal').modal();
+																console.log("if");
+																}else{
+																$('#myModal').modal('hide');
+																console.log("else");
+																}
+																});
+																function testerAge(){
+																var age = document.getElementById("input_age").value;
+																if(age >= 18){
+																window.location.href="file:///home/user/Becode/TI-FrontEnd-AllezCine/index.html"+'#ok';
+																$('#myModal').modal('hide');
+																}else{
+																window.location.href = "https://www.google.be/?gws_rd=ssl";
+																};
+																};
+																//cookies
+																function getCookie(c_name){
+																var c_value = document.cookie;
+																var c_start = c_value.indexOf(" " + c_name + "=");
+																if (c_start == -1){
+																c_start = c_value.indexOf(c_name + "=");
+																}
+																if (c_start == -1){
+																c_value = null;
+																}else{
+																c_start = c_value.indexOf("=", c_start) + 1;
+																var c_end = c_value.indexOf(";", c_start);
+																if (c_end == -1){
+																c_end = c_value.length;
+																}
+																c_value = unescape(c_value.substring(c_start,c_end));
+																}
+																return c_value;
+																}
+																
+																function setCookie(c_name,value,exdays){
+																var exdate=new Date();
+																exdate.setDate(exdate.getDate() + exdays);
+																var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+																document.cookie=c_name + "=" + c_value;
+																}
+																
+																if(getCookie('tiendaaviso')!="1"){
+																document.getElementById("barraaceptacion").style.display="block";
+																}
+																function PonerCookie(){
+																setCookie('tiendaaviso','1',365);
+																document.getElementById("barraaceptacion").style.display="none";
+																};
+																$(document).ready(function(){
+																
+																var clickEvent = false;
+																$('#myCarousel').carousel({
+																interval:   4000
+																}).on('click', '.list-group li', function() {
+																clickEvent = true;
+																$('.list-group li').removeClass('active');
+																$(this).addClass('active');
+																}).on('slid.bs.carousel', function(e) {
+																if(!clickEvent) {
+																var count = $('.list-group').children().length -1;
+																var current = $('.list-group li.active');
+																current.removeClass('active').next().addClass('active');
+																var id = parseInt(current.data('slide-to'));
+																if(count == id) {
+																$('.list-group li').first().addClass('active');
+																}
+																}
+																clickEvent = false;
+																});
+																})
+																$(window).load(function() {
+																var boxheight = $('#myCarousel .carousel-inner').innerHeight();
+																var itemlength = $('#myCarousel .item').length;
+																var triggerheight = Math.round(boxheight/itemlength+1);
+																$('#myCarousel .list-group-item').outerHeight(triggerheight);
+																});
+																</script>
+																<script src="js/bootstrap.min.js"></script>
+																<!-- Scrolling Nav JavaScript -->
+																<script src="js/jquery.easing.min.js"></script>
+																<script src="js/scrolling-nav.js"></script>
+															</body>
+														</html>

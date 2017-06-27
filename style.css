@@ -9,72 +9,119 @@ html {
 
 
 #my_footer{
-	background-color: #130E0A;
+	background-color: black;
+	padding-top:30px; 
+	position: absolute; 
+	width: 100%;
+
 }
 
 #subscribe{
 	color: orange;
 }
 
-#ul_footer{
-	display: inline;
-}
-
-li{
-	display: inline;
-}
-
-form{
-	padding-top: 10px;
-	padding-bottom: 50px;
-}
-
-a{
-	text-decoration: none;
-	color: white;
-}
-
-#email_footer{
-	color: gray;
+#textarea{
+	width: 400px;
 }
 
 #bouton_send{
 	color:white;
 	background-color: orange;
+	border-radius:0;
+	width: 100px;
 }
 
-#div_blanche{
-	width: 250px;
-	padding: 10px;
-	height:20px;
-	border: 1px solid white;
+#bouton_send:hover{
+	color:white;
+	background-color: black;
+	border-radius:0;
+	border:1px white solid;
+	width: 100px;
 }
 
 #copyright{
 	color:gray;
 }
 
-ul{
-	float: right;
-}
-
-hr {
-	background-color: gray;
-	height:1px;
-	width: 1500px;
-	border:0;
+.logoFoot{
+	text-align: right;
+	padding-top: 50px;
 }
 
 #the_best_movies{
 	border: 1px solid gray;
+}
 
+.suscFoot{
+	padding: 25px; 
+	text-align: left;
+	color:orange;
+}
+
+
+
+.separator{
+	padding: 20px;
+	border-top: 1px grey solid;
+}
+
+.reFoot>a{
+	padding: 5px; 
+	color: white; 
+	font-weight: bold;
+}
+
+.reFoot>a:hover{
+	padding: 5px; 
+	color: orange; 
+	font-weight: bold;
+}
+
+#div_fleche{
+width: 50px;
+height: 50px;
+background-color: orange;
+border-radius: 100px;
+margin: 0 auto;
+
+}
+
+#button_fleche{
+width: 50px;
+height: 50px;
+background-color: orange;
+border-radius: 100px;
+border-radius: 100px;
+outline: none;
+border: 1px solid orange;
+font-size: 20px;
+}
+
+#test{
+color: white;
+font-size: 30px;
+}
+
+.divFleche{
+	width: 50px; 
+	height: 50px; 
+	margin-right: 50px; 
+	margin-top: 700px; 
+	margin-left: 1400px; 
+	position: fixed; 
+	z-index: 1;
+}
+
+/*Style.css Pablo*/
 
 body{
 	margin: 0 auto;
 	padding: 0;
 	height: auto;
 	width: 100%;
-	background-color: #fdb830;
+	background-color: orange;
+	position: static;
+
 }
 
 /*Header*/
@@ -112,9 +159,9 @@ body{
 }
 
 .go:hover{
-	background-color: #fdb830;
+	background-color: orange;
 	color: black;
-	border: 1px #fdb830 solid;
+	border: 1px orange solid;
 	border-radius: 15px 15px 15px 15px;
 	width: 150px;
 }
@@ -125,7 +172,7 @@ body{
 }
 
 .login{
-	background-color: #fdb830;
+	background-color: orange;
 	color: white;
 	border-radius: 0;
 	width: 100px;
@@ -138,9 +185,9 @@ body{
 }
 
 .navbar{
-	background-color: #fdb830;
+	background-color: orange;
 	color: black;
-	border: 2px #fdb830 solid;
+	border: 2px orange solid;
 	margin: 0;
 	height: 40px;
 
@@ -193,7 +240,7 @@ body{
 	width: 140px;
 	padding: 5px;
 	text-align: center;
-	background-color: #fdb830;
+	background-color: orange;
 	height: 30px;
 }
 
@@ -225,9 +272,551 @@ body{
       padding-top: 70px;
       width: 100%;
   }
+  
+/*Section CONTACT US*/
+
+#contact_us{
+	height: 850px; 
+	margin-bottom: 0;
+	background-color: white;
+	padding-top: 2%;
+}
+
+.petitLogo{
+	
+	margin-left: 80px;
+	display: block;
+	top: -25px;
+	position: absolute; 
+	z-index: 1;
+}
+
+.title{
+	border-left: 4px orange solid; 
+	padding-left: 20px;
+	margin-left: 70px; 
+	margin-bottom: 20px;
+}
+
+.info{
+	height: 250px; 
+	width: 250px; 
+	background-color: black;
+	 margin: 20px; 
+	 padding: 20px;
+	
+	 color: white; 
+	 font-weight: bold; 
+	 position: relative;
+}
+
+.info>div>a{
+	color: white;
+	margin-left: 10px;
+}
+
+.info>div>a:hover{
+	color: orange;
+	margin-left: 10px;
+}
+
+.facebook{
+	height: 35px; 
+	width: 170px; 
+	margin-top: 10px; 
+	background-color: #3B5998;
+}
+
+.twitter{
+	height: 35px; 
+	width: 170px; 
+	margin-top: 10px; 
+	background-color: #4099FF;
+}
+
+.google{
+	height: 35px; 
+	width: 170px; 
+	margin-top: 10px; 
+	background-color: #db4a39;
+}
+
+.forme{
+	height: auto; 
+	padding: 5px;
+}
+
+.champs{
+	padding: 30px;
+}
+
+.mail{
+	border-radius: 0;
+}
+
+.mail:focus{
+	border-radius: 0;
+	box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.75);
+	border: 1px black ;
+}
+
+.send{
+	margin-bottom: 10px; 
+	margin-left: 15px;
+}
+
+.sendMsn{
+	border-radius: 0;
+	background-color: 
+	black; color: white;
+}
+
+.sendMsn:hover{
+	border-radius: 0;
+	background-color: black; 
+	color: white;
+	border: 1px black solid;
+	box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.75);
+}
+
+/*cookies*/
+
+#barraaceptacion {
+    display:none;
+    position:fixed;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    padding: 20px;
+    width:100%;
+    height: 100px;
+    text-align:center;
+    min-height:40px;
+    background-color: gray;
+    color:#fff;
+    z-index:99999;
+}
+ 
+.inner {
+    width:100%;
+    position:absolute;
+    padding-left:5px;
+    font-family:verdana;
+    font-size:15px;
+    top:30%;
+}
+ 
+.inner a.ok {
+    padding: 10px;
+    color: orange;
+    text-decoration:none;
+}
+
+.inner a.ok:hover {
+    padding: 10px;
+    color: blue;
+    text-decoration:none;
+}
+ 
+.inner a.info {
+	padding-top: 3px;
+    padding-left:5px;
+    text-decoration:none;
+    color:#faff00;
+    background-color: gray;
+}
+
+.inner a.info:hover {
+    padding-left:5px;
+    text-decoration:none;
+    color: blue;
+}
+
+/*News Movies*/
+
+#New_movies{
+	z-index: 2; 
+	position: relative;
+	background-color: white;
+	margin: 0 auto;
+	padding-top: 15px;
+}
+
+.marc{
+	border: 1px black solid;
+}
+
+.slider{
+	background-color: white;
+	height: auto; 
+	padding: 40px;
+}
+
+
+.poster{
+	text-align: center; 
+	padding: 1px;  
+	height: auto; 
+	margin: 18px;
+
+}
+
+figcaption{
+	font-weight: bold;
+	margin: 10px;
+}
+
+.poster>img{
+	width: 100%;
+}
+
+.poster>p{
+	word-spacing: 80px;
+}
+
+/*Les 4 div: rÃ©seaux sociaux*/
+
+#les_4_reseaux_sociaux{
+	position: fixed;
+	top: 325px;
+	z-index: 3;
+}
+
+#les_4_reseaux_sociaux>a{
+	text-decoration:none;
+}
+
+.reseau_sociaux{
+	padding-right: 10px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-left: -150px;
+    width: 200px; /*40px*/
+    height: 60px; /*15px*/
+    border-radius: 0px 100px 100px 0px; /*en haut a gauche   a droite en haut  a droit en bas   a gauche en bas*/
+	color: white;
+ 	transition-duration: 1s;
+ 	transition-property: margin-left; 
+ 	text-align: right;   
+}
+
+.reseau_sociaux:hover{	
+    height: 60px;	
+	margin-left: 0px;
+ 	transition-property: margin-left;
+}
+
+.icon{
+	background-color: white; 
+	color: black; 
+	border-radius:100px; 
+	width:30px; 
+	height:30px;
+	display: inline-block;
+	text-align: center;
+	padding-left:
+
+}
+
+.red{
+	width:30px; 
+	height:25px; 
+	margin-top: 8px;
+}
+#tweeter>p{
+	margin-right: 30px;
+	color: white;
+	font-weight: bold;
+	display: inline-block;
+}
+
+#facebook>p{
+	color: white;
+	font-weight: bold;
+	display: inline-block; 
+	margin-right: 30px;
+}
+
+#dribbble>p{
+	color: white;
+	font-weight: bold;
+	display: inline-block; 
+	margin-right: 30px;
+}
+
+#googlePlus>p{
+	color: white;
+	font-weight: bold;
+	display: inline-block; 
+	margin-right: 30px;
+}
+
+#tweeter{
+	background-color: #4099FF;
+
+}
+
+#facebook{
+	background-color: #3B5998;
+}
+
+#dribbble{
+	background-color: pink;
+}
+
+#googlePlus{
+	background-color: #DB4A39;
+}
+
+/*feacturec movies & series*/
+
+#featured_movies{
+	height: auto; 
+	margin-bottom: 0;
+	background-color: white;
+	padding-top: 0;
+}
+
+#featured_series{
+	height: auto; 
+	margin-bottom: 0;
+	background-color: white;
+	padding-top: 0;
+}
+
+.space{
+	padding-left: 40px;
+	margin-bottom: 30px;
+}
+
+.buttonMovies{
+	border-radius: 0px; 
+	background-color: gray; 
+	border: 2px white solid;
+	color: white;
+	height: 40px;
+	width: 100px;
+}
+
+.buttonMovies:hover{
+	border-radius: 0px; 
+	background-color: orange; 
+	border: 2px white solid;
+	color: white;
+	height: 40px;
+	width: 100px;
+}
+
+.posterM{
+	text-align: center; 
+	padding: 1px;  
+	height: auto; 
+}
+
+.posterM>p{
+	text-align: left; 
+	padding: 1px;  
+	height: auto; 
+}
+
+.buttonPlus{
+	border-radius: 0px; 
+	background-color: orange; 
+	border: 1px orange solid;
+	color: white;
+	margin-left: 500px; 
+	margin-bottom: 80px;
+	font-weight: bold;
+}
+
+.buttonPlus:hover{
+	border-radius: 0px; 
+	background-color: black; 
+	border: 1px black solid;
+	color: white;
+	margin-left: 500px; 
+	margin-bottom: 80px;
+	font-weight: bold;
+}
+
+.movies{
+	background-color: white;
+	height: auto; 
+	padding: 40px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
 
 /*Jumbotron*/
 
-.jumbotron{
-	padding: 0;
+#myCarousel .carousel-caption {
+    left:0;
+    right:0;
+    bottom:0;
+    text-align:left;
+    padding:10px;
+    background:rgba(0,0,0,0.6);
+    text-shadow:none;
+}
+
+#myCarousel .item>img{
+	width: 100%; 
+	height: 400px;
+}
+
+#myCarousel .carousel-caption .col-md-3>h4{
+	font-weight: bold;
+}
+
+#myCarousel .carousel-caption .col-md-3{
+	font-weight: bold;
+	background-color: orange; 
+	text-align: center;
+	margin: 10px;
+	margin-left: 40px;
+}
+
+#myCarousel .carousel-caption .col-md-10>p{
+	margin-left: 35px;
+}
+
+#myCarousel .list-group {
+    position:absolute;
+    top:0;
+    right:0;
+    padding-right: 0;
+}
+    
+#myCarousel .list-group-item {
+    border-radius:0px;
+    cursor:pointer;
+    background-color: black;
+    border: 1px black;
+	color: white;
+	height: auto;
+	padding: 10px;
+}
+
+#myCarousel .list-group-item .col-md-9 >h4{
+	font-weight: bold; 
+	color: orange;
+	margin: 0;
+}
+
+#myCarousel .list-group .active .col-md-9>h4{
+	color: black;
+}
+    
+#myCarousel .list-group .active {
+    background-color: orange;
+    border:1px orange solid;
+    color: black;
+}
+
+#myCarousel .mini{
+	background-image:url('https://i.ytimg.com/vi/dLmKio67pVQ/maxresdefault.jpg');
+	background-size:cover;
+	height:100%;
+}
+    
+@media (min-width: 992px) {
+    #myCarousel {padding-right:33.3333%;}
+    #myCarousel .carousel-controls {display:none;}
+}
+    
+@media (max-width: 991px) {
+    .carousel-caption p,
+    #myCarousel .list-group {display:none;}
+}
+
+/*Shop Movies*/
+
+#shop_movies{
+	height: auto; 
+	margin-bottom: 0;
+	background-color: white;
+	padding-top: 0;
+}
+
+.flecheShop{
+	float: right;
+}
+
+.butonShop{
+	background-color: black; 
+	color: white; 
+	border-radius: 0px; 
+	margin: 0;
+}
+
+.butonShop:hover{
+	background-color: black; 
+	color: orange; 
+	border-radius: 0px; 
+	margin: 0;
+}
+
+.presentation{
+	padding: 0px;
+}
+
+.description{
+	height: 330px; 
+	background-color: orange; 
+	padding: 20px;
+}
+
+.description>h4{
+	font-weight: bold; 
+	margin: 30px;
+}
+
+.resume{
+	word-spacing: 40px; 
+	color: black;
+}
+
+.date{
+	word-spacing: 1px; 
+	color: black;
+}
+
+.genre{
+	word-spacing: 55px; 
+	color: black;
+}
+
+.prix{
+	word-spacing: 70px; 
+	color: black;
+}
+
+#shop_movies .col-md-9>p{
+	color: white; 
+	text-align: left;
+}
+
+#shop_movies .gallery{
+	height: 350px; 
+	padding: 20px;
+}
+
+#shop_movies .col-md-2{
+	height: 100%; 
+	padding: 0; 
+	width: 15%; 
+	margin-left: 15px;
+}
+
+#shop_movies .col-md-2>figcaption{
+	text-align: center;
+}
+
+#shop_movies .col-md-2>p{
+	word-spacing: 50px;
+}
+
+#shop_movies .col-md-2>p>b{
+	color: orange; 
+	word-spacing: normal;
 }

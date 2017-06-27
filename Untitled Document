@@ -1,0 +1,669 @@
+
+<!Doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Allez Ciné</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" media="screen" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <!--<link rel="shortcut icon" type="image/png" href="img/hipsterlogogenerator_1495106664518.png">-->
+    </head>
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+        <!-- Première DIV -->
+        <!--<div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+                
+                <!-- Modal content-->
+        <!--
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Login:</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form">
+                            <label for="usr">Identifiant:</label>
+                            <div class="input-group">
+                                <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-user"></span></span>
+                                <input type="text" class="form-control" id="usr" placeholder="Identifiant">
+                            </div>
+                            <label for="pwd">Password:</label>
+                            <div class="input-group">
+                                <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-lock"></span></span>
+                                <input type="password" class="form-control" id="pwd" placeholder="Password">
+                            </div>
+                            <div class="input-group"><br>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <button type="submit" class="btn boton">New User?</button>
+                                        </div>
+                                        <div class="col-md-2 col-md-offset-2">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Rester connecte</label>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="input-group"><br>
+                                        <p><a href="#" class="tooltip-test" title="Oublie votre mot de passe?">Oublie votre mot de passe?</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-default">Ok!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-3 "><img class="logo" src="Logomakr_2fqD2V.png">
+                    </div>
+                    <div class="col-xs-12 col-md-4 header">
+                        <div class="input-group col-xs-12" >
+                            <input type="text" class="form-control recherche"  placeholder="Recherche" aria-describedby="basic-addon2">
+                            <span class="input-group-btn">
+                                <button class="btn btn-secondary go" type="button">Go</button>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4 header" >
+                        <div class="col-xs-12 col-md-6 HeaderRight" >
+                            <p><span class="glyphicon glyphicon-earphone"></span> <strong>(+000) 123 345 653</strong></p>
+                        </div>
+                        <div class="col-xs-12 col-md-3" >
+                            <button type="button" class="btn btn-secondary login" data-toggle="modal" data-target="#myModal">Login</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="85">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div>
+                            <div class="collapse navbar-collapse" id="myNavbar">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="#">Home</a></li>
+                                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Films <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Actions</a></li>
+                                        <li><a href="#">Aventures</a></li>
+                                        <li><a href="#">Policiers</a></li>
+                                        <li><a href="#">...</a></li>
+                                    </ul>
+                                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Series <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Actions</a></li>
+                                        <li><a href="#">Aventures</a></li>
+                                        <li><a href="#">Policiers</a></li>
+                                        <li><a href="#">...</a></li>
+                                    </ul>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>-->
+    <!-- Deuxième DIV -->
+
+    <div>
+        ici le Jumbotron
+    </div>
+
+    ici les col row etc
+    <!-- Troisiéme DIV -->
+    <div>
+        <nav>
+            navigation
+        </nav>      
+        </div>-->
+
+        
+        
+             
+             
+
+    <!--<section id="accueil">
+        <div class="jumbotron container-fluid">
+            <ul class="pgwSlider">
+                <li><img src="#" alt="Paris, France" data-description="Eiffel Tower and Champ de Mars"></li>
+                <li><img src="#" alt="Montréal, QC, Canada" data-large-src="montreal.jpg"></li>
+                <li>
+                    <img src="#">
+                    <span>Shanghai, China</span>
+                </li>
+                <li>
+                    <a href="http://www.nyc.gov" target="_blank">
+                        <img src="#">
+                        <span>New York, NY, USA</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        </section>
+        <!-- Troisiéme DIV -->
+        <!--<div style="border:1px solid yellow; padding-top:20px; padding-bottom:20px; width:1000px;">
+            <div id="the_best_movies">
+                <div class="container" style="padding-top:20px; padding-bottom:20px">
+                    <div class="row">
+                        <div class="col-md-2" style="padding:0px">
+                            <img src="http://www.konbini.com/fr/files/2013/11/saw-2004-22-g.jpg" alt="Saw Movies" height="130" width="100">
+                            <p>2016</p>
+                        </div>
+                        <div class="col-md-2" style="padding:0px">
+                            <img src="http://www.konbini.com/fr/files/2013/11/saw-2004-22-g.jpg" alt="Saw Movies" height="130" width="100">
+                            <p>2016</p>
+                        </div>
+                        <div class="col-md-2" style="padding:0px">
+                            <img src="http://www.konbini.com/fr/files/2013/11/saw-2004-22-g.jpg" alt="Saw Movies" height="130" width="100">
+                            <p>2016</p>
+                        </div>
+                        <div class="col-md-2" style="padding:0px">
+                            <img src="http://www.konbini.com/fr/files/2013/11/saw-2004-22-g.jpg" alt="Saw Movies" height="130" width="100">
+                            <p>2016</p>
+                        </div>
+                        <div class="col-md-4" style="padding:0px">
+                            <img src="http://www.konbini.com/fr/files/2013/11/saw-2004-22-g.jpg" alt="Saw Movies" height="130" width="100">
+                            <p>2016</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+
+        <section id="featured_movies">
+
+            <div class="row">
+            
+            <h5>FEATURED MOVIES</h5>
+                
+       <div   id="btn-group">
+            <button style="padding-left: 25px; border-radius:0px" id="All">All</button>
+            <button id="Actions">Actions</button>
+            <button id= "Policiers">Policiers</button>
+            <button id="Romans">Romans</button> 
+        </div>
+            </div>
+         
+            
+                <div class="row">
+            
+            <div class="container">
+
+                 <div class="col-md-2 All Policiers">
+                     <figure>
+                         <img src="images/armefatale.jpg" class="img-responsive Policiers"><figcaption>Arme Fatale 4 2016</figcaption></figure>
+                </div>
+            <div class="col-md-2 All Actions">
+                <figure>
+                    <img src="images/dommage.jpg" class="img-responsive"><figcaption>Dommage Collatéral 2016</figcaption></figure>
+                </div>
+            <div class="col-md-2 All Actions">
+                <figure>
+                    <img src="images/fastandfurious.jpg" class="img-responsive"><figcaption>Fast and Furious 4 2016</figcaption></figure>
+                    </div>
+                
+            <div class="col-md-2 All Actions">
+                <figure>
+                    <img src="images/MI3.jpeg" class="img-responsive"><figcaption>MI3 2016</figcaption>
+                </figure>
+                </div>
+            <div class="col-md-2 All Policiers">
+                <figure>
+                    <img src="images/seven.jpg" class="img-responsive"><figcaption>Seven 2016</figcaption>
+                </figure>
+                </div>
+                
+                <div class="col-md-2 All Policiers">
+                <figure>
+                    <img src="images/leon.jpeg" class="img-responsive"><figcaption>Léon 2016</figcaption>
+                    </figure>
+                    </div>
+                
+        
+            
+                 <div class="col-md-2 All Policiers">
+                <figure>
+                    <img src="images/Heat.jpeg" class="img-responsive"><figcaption>HEAT 2016</figcaption>
+                     </figure>
+                </div>
+            <div class="col-md-2 All Actions">
+                <figure>
+                    <img src="images/expendables2.jpg" class="img-responsive"><figcaption>The Expendables 2016</figcaption></figure>
+                </div>
+            <div class="col-md-2 All Romans">
+            <figure>
+            <img src="images/backupplan.jpg" class="img-responsive">
+                <figcaption>The Back-Up Plan 2016</figcaption></figure>
+                </div>
+                
+            <div class="col-md-2 All Romans">
+                <figure>
+                    <img src="images/Notebook.jpg" class="img-responsive"><figcaption>The Notebook 2016</figcaption></figure>
+    
+                </div>
+            <div class="col-md-2 All Romans">
+                <figure>
+                    <img src="images/loveletter.jpeg" class="img-responsive"><figcaption>The Love Letter 2016</figcaption></figure>
+                </div>
+                
+            <div class="col-md-2 All Romans">
+                <figure>
+                    <img src="images/jetepromets.jpg" class="img-responsive"><figcaption>Je Te Promets 2016</figcaption>
+                </figure></div>
+                
+                </div>
+
+            </div>
+
+        </section>
+        
+        <section>
+            <!--centré plus de films-->
+      
+            
+            <div class="seriesplus">
+
+  
+  
+  <div id="demo" class="collapse">
+     <div class="container">
+
+                 <div class="col-md-2">
+                    <figure>
+                        <img src="images/dimanche.jpeg" class="img-responsive"><figcaption>Un Long Dimanche De Fiançailles 2016</figcaption></figure>
+                </div>
+            <div class="col-md-2">
+                <figure>
+                    <img src="images/lacite.jpeg" class="img-responsive"><figcaption>La Cité De Dieu 2016</figcaption>
+                </figure>
+                </div>
+            <div class="col-md-2">
+                <figure>
+                    <img src="images/metro.jpeg" class="img-responsive"><figcaption>L'attaque Metro 123 2016</figcaption></figure>
+                    </div>
+                
+            <div class="col-md-2">
+                <figure>
+                    <img src="images/Irobot.jpeg" class="img-responsive"><figcaption>I Robot 2016</figcaption>
+                </figure>
+                </div>
+            <div class="col-md-2">
+                <figure>
+                    <img src="images/sincity.jpeg" class="img-responsive"><figcaption>SIN CITY 2016</figcaption>
+                </figure>
+                </div>
+                
+                <div class="col-md-2">
+                <figure>
+                    <img src="images/tropadeelite.jpeg" class="img-responsive"><figcaption>Tropa De Elite 2016</figcaption>
+                    </figure>
+                    </div>       
+                
+  </div>
+</div>
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">PLUS DE FILMS</button>
+                
+                </div>
+    
+                </section>
+                
+                
+                
+            <!--Jumbotron-->
+        
+        
+         <h5>FEATURED SERIES TV</h5>
+        
+       <div   id="btn-group1">
+            <button style="padding-left: 25px; border-radius:0px" id="All-s">All</button>
+            <button id="Actions-s">Actions</button>
+            <button id= "Policiers-s">Policiers</button>
+            <button id="Romans-s">Romans</button> 
+        </div>
+             
+        
+        
+        
+        
+        
+         <!--<div class="btn-group-serie">
+  <button class="categories-series">All</button>
+  <button class="categories-action-series">Actions</button>
+  <button class="categories-Policiers-series">Policiers</button>
+     <button class="categories-romans-series">Romans</button>        
+</div>-->
+        
+        
+    
+        
+        <section id="featured_series">
+        
+            <div class="container">
+        
+                 <div class="col-md-2 All-s Policiers-s">
+                     <figure>
+                         <img src="images/espritscriminels.jpeg" class="img-responsive"><figcaption>Esprits Criminels 2016</figcaption></figure>
+                </div>
+            <div class="col-md-2 All-s Policiers-s">
+                <figure>
+                    <img src="images/bones.jpeg" class="img-responsive"><figcaption>BONES 2016</figcaption></figure>
+                </div>
+            <div class="col-md-2 All-s Policiers-s">
+            <figure>
+            <img src="images/csimiami.jpg" class="img-responsive"><figcaption>CSI MIAMI 2016</figcaption>
+                </figure>
+                </div>
+                
+            <div class="col-md-2 All-s Policiers-s">
+                <figure>
+                    <img src="images/rizzoli.jpeg" class="img-responsive"><figcaption>Rizzoli And Isles 2016</figcaption></figure>
+                </div>
+            <div class="col-md-2 All-s Romans-s">
+                <figure>
+                    <img src="images/nashville.jpg" class="img-responsive"><figcaption>Nashville 2016</figcaption>
+                </figure>
+                </div>
+                
+            <div class="col-md-2 All-s Romans-s">
+                <figure>
+                    <img src="images/grey.jpeg" class="img-responsive"><figcaption>Grey's Anatomy</figcaption>
+                </figure>
+                </div>
+                
+                 <div class="col-md-2 All-s Romans-s">
+                     <figure>
+                         <img src="images/mistresses.jpeg" class="img-responsive"><figcaption>Mistresses 2016</figcaption>
+                     </figure>
+                </div>
+                
+            <div class="col-md-2 All-s Romans-s">
+                <figure>
+                    <img src="images/desperatehousewives.jpeg" class="img-responsive"><figcaption>Desperate Housewives 2016</figcaption></figure>
+                </div>
+            <div class="col-md-2 All-s Actions-s">
+                <figure>
+                    <img src="images/prisonbreak.jpeg" class="img-responsive"><figcaption>Prison Break 2016</figcaption></figure>
+                </div>
+                
+            <div class="col-md-2 All-s Actions-s">
+                <figure>
+                    <img src="images/quantico.jpeg" class="img-responsive"><figcaption>Quantico 2016</figcaption>
+                </figure>
+                </div>
+            <div class="col-md-2 All-s Actions-s">
+                <figure>
+                    <img src="images/scandal.jpeg" class="img-responsive"><figcaption>Scandal 2016</figcaption>
+                </figure>
+                </div>
+                
+            <div class="col-md-2 All-s Romans-s">
+                <figure>
+                    <img src="images/vampires.jpeg" class="img-responsive"><figcaption>Vampire Diaries 2016</figcaption></figure>
+                    </div>
+                
+                </div>
+                
+        
+            
+        </section>
+        
+    
+    
+        <section>
+                
+          <!--bouton plus de series-->  
+        <div class="seriesplus1">
+  
+            <div id="serie2" class="collapse">
+      
+                <div class="container">
+      <div class="col-md-2">
+                     <figure>
+                         <img src="images/americancrime.jpeg" class="img-responsive"><figcaption>American Crime 2016</figcaption></figure>
+          </div>
+            <div class="col-md-2">
+                <figure>
+                    <img src="images/narcos.jpeg" class="img-responsive"><figcaption>NARCOS 2016</figcaption></figure>
+                </div>
+            <div class="col-md-2">
+                <figure>
+                    <img src="images/revenge.jpeg" class="img-responsive"><figcaption>Revenge 2016</figcaption>
+                </figure>
+                    </div>
+                
+            <div class="col-md-2">
+                <figure>
+                    <img src="images/murder.jpeg" class="img-responsive"><figcaption>How To Get Away With Murder 2016</figcaption></figure>
+                </div>
+            <div class="col-md-2">
+                <figure>
+                    <img src="images/nurse.jpeg" class="img-responsive"><figcaption>Nurse Jackie 2016</figcaption>
+                </figure>
+                </div>
+                
+            <div class="col-md-2">
+                <figure>
+                    <img src="images/grimm.jpeg" class="img-responsive"><figcaption>GRIMM 2016</figcaption>
+                </figure>
+                    </div>
+            
+                </div>
+            </div>
+      
+            
+        
+                 <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#serie2">PLUS DE SERIES</button>
+        
+            </div>
+        </section>
+        
+      
+              
+        
+        <h5>SHOP MOVIES</h5>
+            
+           <section id="shop_movies">
+        <div class="container-fluid">
+     <div class="row">
+         <div class="col-md-6"><iframe width="590" height="296" src="https://www.youtube.com/embed/uVdV-lxRPFo" frameborder="0" allowfullscreen></iframe></div><div class="col-md-6" style="background-color:orangered" width="800" height="auto"><h1>Captain America: Civil War</h1><h6>Résumé:</h6> teve Rogers est désormais à la tête des Avengers, dont la mission est de protéger l'humanité. À la suite d'une de leurs interventions qui a causé d'importants dégâts collatéraux, le gouvernement décide de mettre en place un organisme de commandement et de supervision.<h6>Date de sortie:<p>27 Avril 2016</p></h6><h6>Genres:</h6><p>Action/Aventure</p><h6>Prix:</h6></div>
+         
+         </div>
+                
+                 <div class="col-md-2">
+                    <figure>
+                        <img src="images/thegoodgirl.jpeg" class="img-responsive"><figcaption>The Good Girl 2016</figcaption></figure>
+                </div>
+            <div class="col-md-2">
+                <figure>
+                    <img src="images/thelunchbox.jpeg" class="img-responsive"><figcaption>The Lunchbox 2016></figcaption></figure>
+                </div>
+            <div class="col-md-2">
+                <figure>
+                    <img src="images/hours.jpeg" class="img-responsive"><figcaption>The Hours 2016</figcaption></figure>
+                    </div>
+                
+            <div class="col-md-2">
+                <figure>
+                    <img src="images/Peterpan2.jpeg" class="img-responsive"><figcaption>Peter Pan 2 2016</figcaption>
+                </figure>
+                </div>
+            <div class="col-md-2">
+                <figure>
+                    <img src="images/badmoms.jpeg" class="img-responsive"><figcaption>BAD MOMS 2016</figcaption>
+                </figure>
+                </div>
+                
+            <div class="col-md-2">
+                <figure>
+                    <img src="images/light.jpeg" class="img-responsive"><figcaption>Light By The Oceans 2016</figcaption></figure>                                           
+                    </div>
+                </div>
+        </section>
+    
+
+        
+        
+    
+        <!--<section id="contact_us">
+            contact_us
+        </section>
+        <footer id="my_footer">
+            <form class="form-inline">
+                <div class="form-group">
+                    <input style="border-radius:0;" type="email" class="form-control" id="exampleInputEmail2" placeholder="Your email..">-->
+
+                    
+                    
+                   
+                        
+                    
+            <!--<section id="contact_us">
+                <div class="container-fluid">
+                    <div class="row">
+                        contact_us
+                    </div>
+                </div>              
+            </section>
+            <footer id="my_footer" style="padding-top:30px; position: absolute; bottom: 0">
+                <label style="color:orange">SUBSCRIBE TO US</label>
+                <footer id="my_footer">
+                    <form class="form-inline">
+                        <div class="form-group" style="border:1px solid white; padding:5px">
+                            <input style="border-radius:0;" type="email" class="form-control" id="exampleInputEmail2" placeholder="Your email..">
+                            <button id="bouton_send" style="border-radius:0;" type="submit" class="btn .btn-warning">Send</button>
+                        </div>
+                    </form>
+                    <hr/>
+                    <label id="copyright"> &copy; 2017 One Movies. All rights reserved | Design by BeCode</label>
+                    <ul id="ul_footer">
+                        <li><a href=""> <strong>MOVIES</strong> </a></li>
+                        <li><a href=""> <strong>FAQ</strong> </a></li>
+                        <li><a href=""> <strong>ACTION</strong> </a></li>
+                        <li><a href=""> <strong>ADVENTURE</strong> </a></li>
+                        <li><a href=""> <strong>COMEDY</strong> </a></li>
+                        <li><a href=""> <strong>ICONS</strong> </a></li>
+                        <li><a href=""> <strong>CONTACT US</strong> </a></li>
+                    </ul>
+                </footer>
+            </footer>-->
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+                    
+                    
+                    <script>
+               function buttonDisplay(classe,valeur){
+                   var All=document.getElementsByClassName(classe);
+                     for(var i=0;i<All.length;++i){
+                        // console.log("film: "+ movies[i]);
+                        All[i].style.display=valeur;
+                      }     
+                }
+                        
+            document.getElementById('All').onclick = function(){
+               var classesToDiplay = ['All','Actions','Policiers','Romans', 'block'];
+                for(var i=0;i<classesToDiplay.length;++i){
+                        // console.log("film: "+ movies[i]);
+                       var classe = classesToDiplay[i];
+                   buttonDisplay(classe,'block');
+                    
+               }
+                
+            }
+            
+            document.getElementById('Actions').onclick = function(){
+                 buttonDisplay('All','none');
+                buttonDisplay('Actions','block');
+                   
+            }
+            
+            document.getElementById('Policiers').onclick = function(){
+                buttonDisplay('All','none');
+                buttonDisplay('Policiers','block'); 
+                     
+            }
+            
+            document.getElementById('Romans').onclick = function(){
+                buttonDisplay('All','none');
+                buttonDisplay('Romans','block');
+          
+            
+            }
+                    
+                    </script>
+        
+        
+       <script>
+               function buttonDisplay(classe,valeur){
+                   var All=document.getElementsByClassName(classe);
+                     for(var i=0;i<All.length;++i){
+                        // console.log("film: "+ movies[i]);
+                        All[i].style.display=valeur;
+                      }     
+                }
+                        
+            document.getElementById('All-s').onclick = function(){
+               var classesToDiplay = ['All-s','Actions-s','Policier-s','Romans-s', 'block'];
+                for(var i=0;i<classesToDiplay.length;++i){
+                        // console.log("film: "+ movies[i]);
+                       var classe = classesToDiplay[i];
+                   buttonDisplay(classe,'block');
+                    
+               }
+                
+            }
+            
+            document.getElementById('Actions-s').onclick = function(){
+                 buttonDisplay('All-s','none');
+                buttonDisplay('Actions-s','block');
+                   
+            }
+            
+            document.getElementById('Policiers-s').onclick = function(){
+                buttonDisplay('All-s','none');
+                buttonDisplay('Policiers-s','block'); 
+                     
+            }
+            
+            document.getElementById('Romans-s').onclick = function(){
+                buttonDisplay('All-s','none');
+                buttonDisplay('Romans-s','block');
+          
+            
+            }
+                    
+                    </script>
+         
+          
+            
+    </body>
+    
+            
+        </html>
